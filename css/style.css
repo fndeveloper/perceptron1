@@ -250,20 +250,28 @@ background-color: white !important;
     .div_of_serivce_hr {
       transition: 0.7s ease-in-out !important;
       height: 2px;
+      background-color: var(--bg-white) !important;
     }
 
     .div_of_serivce h2:hover {
         opacity: 1 !important;
       color: var(--text_white) !important;
     }
+.div_of_serivce_hr_w {
+  background-color:var(--bg-light);
+  height: 2px !important; 
+  width: 0%;
+  transition: all 0.5s ease; 
+}
 
-    .div_of_serivce h2:hover + .div_of_serivce_hr {
-      background-color: var(--bg-white) !important;
-      height: 1px !important;
-    }
+
+.div_of_serivce h2:hover + .position-relative .div_of_serivce_hr_w {
+  width: 92.5%; 
+  background-color: var(--bg-white) !important;
+}
 .all_cards {
   position: relative;
-  min-height: 400px; /* card height jitna */
+  min-height: 400px;
 }
 
 .all_cards > div {
