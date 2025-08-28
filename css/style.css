@@ -321,7 +321,7 @@ background-color: white !important;
 
 
 .div_of_serivce h2:hover + .position-relative .div_of_serivce_hr_w {
-  width: 92.5%; 
+  width: 86.5%; 
   background-color: var(--bg-white) !important;
 }
 .all_cards {
