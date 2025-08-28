@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Practice</title>
+  <style>
+    :root {
+      --text_white: #ffffff;
+      --text_light: #bbbbbb;
+      --bg-white: #ffffff;
+      --bg_grey: #2d2d2d;
+    }
+
+    body {
+      background: #111;
+      font-family: Arial, sans-serif;
+    }
+
+    .h_400px {
+      object-fit: cover !important;
+      height: 340px !important;
+    }
+
+    .all_div_round {
+      border-radius: 10px;
+    }
+
+    .div_of_serivce h2 {
+      transition: 0.7s ease-in-out !important;
+      cursor: pointer;
+    }
+
+    .div_of_serivce_hr {
+      transition: 0.7s ease-in-out !important;
+      height: 2px;
+    }
+
+    .div_of_serivce h2:hover {
+      color: var(--text_white) !important;
+    }
+
+    .div_of_serivce h2:hover + .div_of_serivce_hr {
+      background-color: var(--bg-white) !important;
+      height: 1px !important;
+    }
+
+    .all_cards > div {
+      display: none; /* sabko by default hide */
+    }
+
+    .all_cards > .active {
+      display: block; /* jo active hoga sirf wo show */
+    }
+
+    .bg_grey {
+      background: var(--bg_grey);
+    }
+
+    .text_light {
+      color: var(--text_light);
+    }
+
+    .text-white {
+      color: var(--text_white);
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- ============ ROW 2 CODE START ========= -->
+  <div class="container-fluid d-flex flex-lg-row flex-column py-5" style="display:flex;gap:20px;">
+    <div class="col-lg-4 all_cards">
+      <!-- ===== AI PRODUCT CODE START ============ -->
+      <div class="col-10 bg_grey p-2 all_div_round ai_product">
+        <img src="https://via.placeholder.com/400x300" class="img-fluid h_400px col-12 all_div_round" alt="AI PRODUCT SOLUTION">
+        <div class="pt-3 font-family-Funnel text_light">
+          <h5 class="text-white">AI Product Soluton</h5>
+          <p>
+            Digital designs that help brands move faster and convert better.
+          </p>
+        </div>
+      </div>
+      <!-- =========  AI PRODUCT CODE END ================= -->
+
+      <!-- ============= GRC SERVICE CODE START ====================  -->
+      <div class="col-10 bg_grey p-2 all_div_round grc_product">
+        <img src="https://via.placeholder.com/400x300" class="img-fluid h_400px col-12 all_div_round" alt="GRC SERVICE">
+        <div class="pt-3 font-family-Funnel text_light">
+          <h5 class="text-white">GRC Service </h5>
+          <p>
+            Digital designs that help brands move faster and convert better.
+          </p>
+        </div>
+      </div>
+      <!-- ============== GRC SERVI CE CODE END ========================= -->
+
+      <!-- ==================== WEB DEV CODE START ==================== -->
+      <div class="col-10 bg_grey p-2 all_div_round web_product">
+        <img src="https://via.placeholder.com/400x300" class="img-fluid h_400px col-12 all_div_round" alt="WEB DEV">
+        <div class="pt-3 font-family-Funnel text_light">
+          <h5 class="text-white">AI Driven Web & App Development</h5>
+          <p>
+            Digital designs that help brands move faster and convert better.
+          </p>
+        </div>
+      </div>
+      <!-- =================== WEB DEV CODE END ========================== -->
+    </div>
+
+    <div class="col-lg-8 div_of_serivce">
+      <div class="py-2 ai_product_div">
+        <h2 class="text_light fs_7v font-family-Funnel">AI Product Solution</h2>
+        <hr class="bg_light div_of_serivce_hr">
+      </div>
+      <div class="py-2 grc_product_div">
+        <h2 class="text_light fs_7v font-family-Funnel">GRC Service</h2>
+        <hr class="bg_light div_of_serivce_hr">
+      </div>
+      <div class="py-2 web_product_div">
+        <h2 class="text_light fs_7v font-family-Funnel">AI Driven Web & App Development</h2>
+        <hr class="bg_light div_of_serivce_hr">
+      </div>
+    </div>
+  </div>
+  <!-- ============ ROW 2 CODE END ========= -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // sab card wrappers ko select karo
+      const aiCard = document.querySelector(".ai_product");
+      const grcCard = document.querySelector(".grc_product");
+      const webCard = document.querySelector(".web_product");
+
+      // by default AI card show ho
+      aiCard.classList.add("active");
+
+      // helper function to show specific card
+      function showCard(card) {
+        [aiCard, grcCard, webCard].forEach(c => c.classList.remove("active"));
+        card.classList.add("active");
+      }
+
+      // headings par event listeners
+      document.querySelector(".ai_product_div h2").addEventListener("mouseenter", () => showCard(aiCard));
+      document.querySelector(".grc_product_div h2").addEventListener("mouseenter", () => showCard(grcCard));
+      document.querySelector(".web_product_div h2").addEventListener("mouseenter", () => showCard(webCard));
+    });
+  </script>
+
+</body>
+</html>

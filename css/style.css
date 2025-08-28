@@ -1,0 +1,288 @@
+/* ======== FONT FAMILY ( FUNNEL DISPLAY ) ======================= */
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --bg-light:#f5f5f5;
+    --bg-white:#ffffff;
+
+    --bg_black:#000000 ;
+    --bg_grey:#181818 ;
+
+    --font-family-Funnel: "Funnel Display", sans-serif;
+    --font-family-Inter: "Inter", sans-serif;
+    --text_dark:#000000f3;
+    --text_light:#949494;
+    --text_white:#ffff;
+}
+body{
+    background-color: var(--bg-light ) !important;
+}
+
+/* =============== CLASS FOR REMAIN CONSTANT CODE START ============ */
+.bg_grey{
+    background-color: var(--bg_grey) !important;
+}
+.fs_6{
+    font-size: 13px;
+}
+.text_dark{
+    color: var(--text_dark) !important;
+}
+.text_light{
+    color: var(--text_light) !important;
+}
+.bg_light{
+    background-color: var(--bg-light);
+}
+.bg_white{
+    background-color: var(--bg-white);
+}
+.bg_dark{
+background-color: var(--bg_black) !important;
+}
+.h_85vh{
+    height: 85vh !important;
+}
+.w_97vw{
+    width: 97vw !important;
+}
+.all_div_round{
+    border-radius: 20px;
+}
+.font-family-Funnel{
+font-family: var(--font-family-Funnel) !important;
+}
+
+.font-family-Inter{
+font-family: var(--font-family-Inter) !important;
+}
+.fs_8v{
+    font-size: 8vw !important;
+}
+.fs_7v{
+    font-size: 5vw !important;
+
+}
+/* ===== BTN DEFAULT CODE START ========= */
+.btn_d {
+    background-color: var(--bg_black) !important;
+font-family: var(--font-family-Funnel) !important;
+padding: 10px 5px !important;
+border: none ;
+border-radius: 40px !important;  
+    transition: 0.3s ease-in-out !important;
+
+}
+.fa-plus{
+    transition: 0.3s ease-in-out !important;
+}
+.btn_d:hover .fa-plus{
+    font-weight: 800 !important;
+    transform: rotate(180deg) !important;
+}
+/* ===== BTN DEFAULT CODE END ============= */
+
+/* ======= ROTATE CODE START ============= */
+.circle-container {
+  position: relative;
+  width: 150px;
+  height: 25px;
+
+}
+
+/* Center image CSS */
+.center-image {
+  position: absolute;
+  top: 320% !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+/* Spinning text CSS */
+.spinning {
+  transform-origin: 50% 50%;
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/* ======= ROTATE CODE END ==================== */
+/* =============== CLASS FOR REMAIN CONSTANT CODE END ============ */
+
+/* ================== TAGLINE CODE START ================= */
+.tag_animtaion{
+    display:  flex !important;
+    width: 100%;
+    white-space: nowrap !important;
+    overflow: hidden;
+}
+.tag_animtaion h2{
+    opacity: 0 ;
+    transition: 0.7s ease-in-out !important;
+    animation: 18s tagtext linear infinite;
+    color: var(--text_light);
+}
+@keyframes tagtext {
+  0% {
+    transform: translateX(10%);   /* right side se aayega */
+    opacity: 0;    
+    color: var(--text_light);
+  }
+
+  25% {
+    opacity: 0.7;    
+    color: var(--text_dark);
+  }
+
+  50% {
+    opacity: 1;    
+    color: var(--text_dark);  /* bilkul center pe dark aur full visible */
+  }
+
+  75% {
+    opacity: 0.7;    
+    color: var(--text_dark);
+  }
+
+  100% {
+    transform: translateX(-100%); /* left side se nikal jayega */
+    opacity: 0;    
+    color: var(--text_light);
+  }
+}
+
+.bg_tag_animation{
+   background-color: #e0e0e00c; 
+   z-index: 111 !important;
+   backdrop-filter: blur(115px);
+}
+
+.tagline {
+  display: inline-block;
+  white-space: nowrap; /* ek hi line mein rakhta hai */
+  animation: tagtext 8s linear infinite; /* speed aur loop */
+}
+
+/* ================== TAGLINE CODE END =================== */
+/* ============== NAVBAR CSS CODE START ================ */
+.navbar{
+    font-family: var(--font-family-Inter) !important;
+}
+.large_nav li {
+    margin: 0% 1%;
+}
+.large_nav li a{
+color: var(--text-dark) !important;
+}
+.page_dropdown:hover .page_dropdown_menu{
+    display: block !important;
+    visibility: visible !important;
+    z-index: 2 !important;
+       opacity: 1;
+    }
+    .page_dropdown_menu{
+        font-weight: 500 !important;
+        font-size: 14px ;
+    border-radius:6px;
+    outline: none !important;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px !important;
+    box-shadow: none !important;
+background-color: white !important;
+    opacity: 0;
+    z-index: -1;
+    margin-top: 11px !important;
+    visibility: hidden !important;
+    display: block;
+    transition: 0.7s ease-in-out !important;
+}
+.service_dropdown_menu{
+
+        font-weight: 500 !important;
+        font-size: 14px ;
+    border-radius:6px;
+    outline: none !important;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px !important;
+    box-shadow: none !important;
+background-color: white !important;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden !important;
+    display: flex;
+    width: 85vw !important;
+    position:fixed !important;
+        margin: 1% 8% !important;
+    left: 0% !important;
+
+    transition: 0.7s ease-in-out !important;
+}
+.service_dropdown:hover .service_dropdown_menu{
+    display: block !important;
+    visibility: visible !important;
+    z-index: 2 !important;
+       opacity: 1;
+    }
+/* ============== NAVBAR CSS CODE END ================== */
+
+/* ================== BANNER CODE START ================= */
+
+
+/* ================== BANNER CODE END ================= */
+
+
+.rounded_3{
+    border-radius: 60px !important;
+}
+
+/* ========== SERVICE CODE START ============== */
+.h_400px{
+    object-fit: cover !important;
+    height: 340px !important;
+}
+ .div_of_serivce h2 {
+    opacity: 0.6 ;
+      transition: 0.7s ease-in-out !important;
+      cursor: pointer;
+      color: var(--text_light) !important;
+    }
+
+    .div_of_serivce_hr {
+      transition: 0.7s ease-in-out !important;
+      height: 2px;
+    }
+
+    .div_of_serivce h2:hover {
+        opacity: 1 !important;
+      color: var(--text_white) !important;
+    }
+
+    .div_of_serivce h2:hover + .div_of_serivce_hr {
+      background-color: var(--bg-white) !important;
+      height: 1px !important;
+    }
+.all_cards {
+  position: relative;
+  min-height: 400px; /* card height jitna */
+}
+
+.all_cards > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  opacity: 0;
+  transform: translateY(30px);
+  pointer-events: none;
+  transition: all 0.6s ease-in-out;
+}
+
+.all_cards > .active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  position: relative;
+}
+
+/* ===========  SERVICE CODE END ==================== */
