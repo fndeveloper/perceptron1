@@ -10,7 +10,43 @@ if (header) {
   fetch("../header.html")
     .then((e) => e.text())
     .then((data) => {
+
+
+
       header.innerHTML = data;
+
+// ============== THEME SET CODE START ======================
+var theme=document.getElementById("theme");
+var localtheme=localStorage.getItem("theme");
+
+if(!localtheme){
+  localStorage.setItem("theme","light")
+  localtheme="light"
+}
+document.body.classList.add(localtheme)
+theme.addEventListener("click",(e)=>{
+
+  if(localtheme === "light"){
+    localtheme="dark";
+        localStorage.setItem("theme", "dark");
+
+  }
+else if(localtheme === "dark"){
+     localtheme="light";
+      localStorage.setItem("theme", "light");
+
+
+  }
+   document.body.classList.remove("light", "dark");
+  document.body.classList.add(localtheme);
+
+theme.innerHTML = 
+  localtheme === "dark"
+    ? `<i class="fa-solid fa-sun"></i> `
+    : `<i class="fa-regular fa-moon"></i> `;
+})
+
+// ============== THEME SET CODE END ========================
 
       });
     
@@ -54,3 +90,4 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".web_product_div h2")
     .addEventListener("mouseenter", () => showCard(webCard));
 });
+
