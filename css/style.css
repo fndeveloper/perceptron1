@@ -394,7 +394,7 @@ background-color: white !important;
 /* ============ LOADER CODE START ============ */
 .loader{
   height: 100vh !important;
-  background-color: var(--bg-light);
+  /* background-color: var(--bg-light); */
   position: fixed;
   top: 0%;
   z-index: 1111111  !important;

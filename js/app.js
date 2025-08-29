@@ -123,13 +123,17 @@ if(loader){
     // ==== LOADER REMOVE CODE START ==========
 var loader_div=document.getElementById("loader_div");
 document.body.style.overflow = "hidden"; 
+document.body.classList.add("anim")
 setTimeout(() => {
+  
   loader_div.style.display="none";
-  document.body.style.overflow = "visible"; 
   document.body.classList.add("anim")
+  document.body.style.overflow = "visible"; 
 }, 4000);
     // ==== LOADER REMOVE CODE END ==========
 
 })
 }
 // ================= LOADER CODE END ==================
+
+
