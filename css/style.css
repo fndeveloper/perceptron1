@@ -27,9 +27,9 @@ body.dark{
  
       --bg_black:#000000 ;
     /* --bg-white:#ffffff; */
-    --bg-white:#000000;
+    --bg-white:#0f0f0f;
 
-    --bg_grey:#181818 ;
+    --bg_grey:#030303 ;
     
 
 
@@ -126,6 +126,12 @@ border-radius: 40px !important;
     transition: 0.3s ease-in-out !important;
 
 }
+.btn_ceo{
+  padding: 7px 5px !important;
+border: none ;
+border-radius: 40px !important;  
+    transition: 0.3s ease-in-out !important;
+}
 .fa-plus{
     transition: 0.3s ease-in-out !important;
 }
@@ -221,8 +227,16 @@ border-radius: 40px !important;
 
 /* ================== TAGLINE CODE END =================== */
 /* ============== NAVBAR CSS CODE START ================ */
+.navfix{
+  position: fixed;
+  top: -1%;
+  z-index: 111 !important;
+  width: 100%;
+  background-color: var(--bg-white) !important;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px !important;
+}
 .navbar{
-    font-family: var(--font-family-Inter) !important;
+    font-family: var(--font-family-Funnel) !important;
 }
 .large_nav li {
     margin: 0% 1%;
@@ -349,3 +363,20 @@ background-color: white !important;
 }
 
 /* ===========  SERVICE CODE END ==================== */
+
+
+
+/* ============= CONTACT FORM CODE START ===================== */
+.contact_form_index .form-control {
+  border: 0px;
+  color: var(--text_dark);
+  padding: 15px 0px !important;
+  border-radius: 0% !important;
+  background-color: var(--bg-white);
+  border-bottom: 0.1px solid #949494 !important;
+}
+/* ============== CONTACT FORM CODE END ====================== */
+
+.custom-line-height {
+  line-height: 1.5 !important; 
+}

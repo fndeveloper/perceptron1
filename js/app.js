@@ -5,15 +5,31 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 var header = document.getElementById("header");
-
 if (header) {
   fetch("../header.html")
-    .then((e) => e.text())
-    .then((data) => {
+  .then((e) => e.text())
+  .then((data) => {
+    
+    
+    
+    header.innerHTML = data;
+    // ============== NAVBAR TOP SCROLL FIX CODE START =====================
+    var navbar=document.getElementById("navbar")
+    window.addEventListener("scroll",()=>{
+      var window_srcoll=window.scrollY;
+      console.log(window_srcoll);
+  
+  if(window_srcoll > 500){
+  navbar.classList.add("navfix")
+}
+else{
+  navbar.classList.remove("navfix")
+  
+}
+})
 
 
-
-      header.innerHTML = data;
+// ============== NAVBAR TOP SCROLL FIX CODE END =====================
 
 // ============== THEME SET CODE START ======================
 var theme=document.getElementById("theme");
