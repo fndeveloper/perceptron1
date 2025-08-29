@@ -247,6 +247,7 @@ border-radius: 40px !important;
 .navbar{
   height: 0%;
     font-family: var(--font-family-Funnel) !important;
+    background-color: var(--bg-white) !important;
 }
 .large_nav li {
     margin: 0% 1%;
