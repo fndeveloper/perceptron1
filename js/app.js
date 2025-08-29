@@ -19,7 +19,7 @@ if (header) {
       var window_srcoll=window.scrollY;
       console.log(window_srcoll);
   
-  if(window_srcoll > 500){
+  if(window_srcoll > 900){
   navbar.classList.add("navfix")
 }
 else{
@@ -107,3 +107,29 @@ document.addEventListener("DOMContentLoaded", function () {
     .addEventListener("mouseenter", () => showCard(webCard));
 });
 
+
+
+
+
+// ================= LOADER CODE START ==================
+var loader=document.getElementById("loader");
+if(loader){
+  
+  fetch("../loader.html")
+    .then(e=>e.text())
+  .then((data)=>{
+
+    loader.innerHTML=data
+    // ==== LOADER REMOVE CODE START ==========
+var loader_div=document.getElementById("loader_div");
+document.body.style.overflow = "hidden"; 
+setTimeout(() => {
+  loader_div.style.display="none";
+  document.body.style.overflow = "visible"; 
+  document.body.classList.add("anim")
+}, 4000);
+    // ==== LOADER REMOVE CODE END ==========
+
+})
+}
+// ================= LOADER CODE END ==================

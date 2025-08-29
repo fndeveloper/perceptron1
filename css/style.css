@@ -1,3 +1,5 @@
+/* ====================== ANIMATION CDN ========================= */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 /* ======== FONT FAMILY ( FUNNEL DISPLAY ) ======================= */
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root{
@@ -168,6 +170,11 @@ border-radius: 40px !important;
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.anim{
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.2s; /* don't forget to set a duration! */
+}
 /* ======= ROTATE CODE END ==================== */
 /* =============== CLASS FOR REMAIN CONSTANT CODE END ============ */
 
@@ -234,8 +241,11 @@ border-radius: 40px !important;
   width: 100%;
   background-color: var(--bg-white) !important;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px !important;
+  transition: 0.9s ease-in;
+  height: max-content !important;
 }
 .navbar{
+  height: 0%;
     font-family: var(--font-family-Funnel) !important;
 }
 .large_nav li {
@@ -380,3 +390,60 @@ background-color: white !important;
 .custom-line-height {
   line-height: 1.5 !important; 
 }
+
+/* ============ LOADER CODE START ============ */
+.loader{
+  height: 100vh !important;
+  background-color: var(--bg-light);
+  position: fixed;
+  top: 0%;
+  z-index: 1111111  !important;
+  transition: 0.9s ease-in-out !important;
+}.div_top_loader {
+  background-color: var(--bg_black);
+  height: 49.9%;
+  overflow: hidden; /* andar ka content hide ho jaye jab collapse ho */
+  animation: collapseDiv 1s ease forwards;
+  animation-delay: 3s; /* 4 second ke baad start hoga */
+}
+
+@keyframes collapseDiv {
+  from {
+    height: 50%;
+  }
+  to {
+    height: 0;
+  }
+}
+.div_bottom_loader {
+  position: absolute;
+    background-color: var(--bg_black);
+   bottom: 0% !important;
+   width: 100%;
+  height: 49.9%;
+  overflow: hidden; 
+  animation: collapseDiv 1s ease forwards;
+  animation-delay: 3s; 
+}
+
+@keyframes collapseDiv {
+  from {
+    height: 50%;
+  }
+  to {
+    height: 0;
+  }
+}
+.linear_line_loader{
+background-color: var(--bg_black);
+  width: 0%;
+  height: 1px !important;
+  animation: linear lin 2.9s  1;
+}
+@keyframes lin {
+  0%{width: 0%;}
+  100%{width: 100%;}
+
+}
+
+/* ============ LOADER CODE END ==================== */
