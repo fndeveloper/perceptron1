@@ -58,7 +58,7 @@ body.light{
 
 
     --text_dark:#000000f3;
-    --text_light:#949494;
+    --text_light:#4d4d4d;
     --text_white:#ffff; 
 }
 
@@ -100,14 +100,25 @@ font-family: var(--font-family-Funnel) !important;
 .font-family-Inter{
 font-family: var(--font-family-Inter) !important;
 }
+.text_justify{
+  text-align: justify !important;
+}
 .fs_8v{
     font-size: 8vw !important;
+}
+.fs_10v{
+    font-size: 12vw !important;
+    line-height: 70% !important;
 }
 .fs_7v{
     font-size: 5vw !important;
 
 }
 /* ===== BTN DEFAULT CODE START ========= */
+body.offcanvas-open {
+  overflow: scroll !important;
+  padding-right: 0 !important; /* scrollbar ke jagah shift avoid karne ke liye */
+}
 .thembtn{
   padding: 5px 10px !important;
   font-size: 18px !important;
@@ -129,10 +140,11 @@ border-radius: 40px !important;
 
 }
 .btn_ceo{
-  padding: 7px 5px !important;
+  padding: 10px 5px !important;
 border: none ;
-border-radius: 40px !important;  
+
     transition: 0.3s ease-in-out !important;
+    /* border-radius: 60% !important; */
 }
 .fa-plus{
     transition: 0.3s ease-in-out !important;
@@ -158,10 +170,12 @@ border-radius: 40px !important;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
+  padding: 1px !important;
 }
 
 /* Spinning text CSS */
 .spinning {
+  height: 300px !important;
   transform-origin: 50% 50%;
   animation: spin 20s linear infinite;
 }
@@ -448,3 +462,41 @@ background-color: var(--bg_black);
 }
 
 /* ============ LOADER CODE END ==================== */
+
+
+.image_home_banner{
+  background-size: cover;
+  width: 100% !important;
+  height: 50vh !important;
+}
+
+.nav_tabs_of_about .nav-item .nav-link
+{
+  text-align: start !important;
+font-size: 1.9vw;
+
+font-weight: 400 !important;
+outline: none !important;
+ transition: 0.7s ease-in-out !important;
+color: var(--text_dark);
+ padding: 5px 20px !important;
+
+}
+.nav_tabs_of_about .nav-item .nav-link.active{
+background-color: var(--bg_black) !important;
+ background-color: transparent;
+ border-radius: 40px;
+ padding: 5px 20px !important;
+ border: none;
+outline: none !important;
+color: var(--text_white);
+ transition: 0.7s ease-in-out !important;
+}
+.tab_content_of_about{
+
+  color: var(--text_light) !important;
+}
+.nav_tabs_of_about {
+  padding: 10px 0px !important;
+  border-bottom: none !;
+}

@@ -1,58 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scroll Animation Test</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-    }
-    section {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 2rem;
-      background: #eee;
-      border-bottom: 2px solid #ccc;
-      opacity: 0; /* hidden before animation */
-      transition: opacity 0.3s ease;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modal Dot Animation</title>
+<style>
+  body { margin: 0; }
 
-    .section_ani {
-      animation: fadeIn 1.3s forwards;
-    }
+  .info_canvas {
+    position: fixed;
+    top: 50%;
+    right: 20px;                 /* initial dot position */
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    cursor: pointer;
+    transition: all 0.8s ease-in-out;
+    z-index: 9999;
+  }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(50px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+  .info_canvas.open {
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    transform: none;
+    border-radius: 0%;
+  }
+</style>
 </head>
 <body>
 
-  <section>Section 1</section>
-  <section>Section 2</section>
-  <section>Section 3</section>
-  <section>Section 4</section>
+<div class="info_canvas" id="infoCanvas"></div>
 
-  <script>
-    const sections = document.querySelectorAll("section");
+<script>
+  const canvas = document.getElementById("infoCanvas");
 
-    window.addEventListener("scroll", () => {
-      sections.forEach(section => {
-        const rect = section.getBoundingClientRect();
+  canvas.addEventListener("click", () => {
+    // toggle open class
+    canvas.classList.toggle("open");
+  });
+</script>
 
-        if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
-          // Agar pehli baar hi class na lagi ho to lagao
-          if (!section.classList.contains("section_ani")) {
-            section.classList.add("section_ani");
-          }
-        }
-      });
-    });
-  </script>
 </body>
 </html>
