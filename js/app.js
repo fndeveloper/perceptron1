@@ -17,7 +17,7 @@ if (header) {
     var navbar=document.getElementById("navbar")
     window.addEventListener("scroll",()=>{
       var window_srcoll=window.scrollY;
-      console.log(window_srcoll);
+
   
   if(window_srcoll > 900){
   navbar.classList.add("navfix")

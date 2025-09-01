@@ -500,3 +500,23 @@ color: var(--text_white);
   padding: 10px 0px !important;
   border-bottom: none !;
 }
+.text_stroke {
+  color: var(--text_white);                        /* andar ka text color */
+  -webkit-text-stroke-width: 1px;        /* stroke ka size */
+  -webkit-text-stroke-color:var(--text_dark);        /* stroke ka color */
+  font-family: var(--font-family-Inter);
+  font-size: 5vw !important;
+  font-weight: 700;
+  opacity: 0.9;
+}
+.image_of_card_serivce{
+  height: 300px !important; 
+}
+.service_cards{
+  height: max-content !important;
+  position: sticky;
+  transition: 0.7s position ease-in-out !important;
+  top: 15% !important;
+box-shadow: rgba(100, 100, 111, 0.034) 0px 7px 19px 0px !important;
+color: var(--text_dark) !important;
+}
