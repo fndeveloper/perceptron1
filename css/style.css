@@ -374,7 +374,9 @@ color: var(--text-dark) !important;
   width: 0%;
   transition: all 0.5s ease; 
 }
-
+ a{
+  word-break: normal !important;
+}
 
 .div_of_serivce h2:hover + .position-relative .div_of_serivce_hr_w {
   width: 86.5%; 
