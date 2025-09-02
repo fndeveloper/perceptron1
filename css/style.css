@@ -254,7 +254,7 @@ border: none ;
   z-index: 111 !important;
   width: 100%;
   background-color: var(--bg-white) !important;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px !important;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 1px 10px 0px !important;
   transition: 0.9s ease-in;
   height: max-content !important;
 }
@@ -520,3 +520,72 @@ color: var(--text_white);
 box-shadow: rgba(100, 100, 111, 0.034) 0px 7px 19px 0px !important;
 color: var(--text_dark) !important;
 }
+
+.sticky-element{
+  transition: 0.7s ease-in-out !important;
+  position: sticky !important;
+  top: 10% !important;
+  height: max-content !important;
+}
+.accordion{
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  margin-bottom: 10px;
+  transition: 0.7s ease-in-out !important;
+  
+}
+.accordion-button{
+  outline: none !important;
+  
+  color: var(--text-dark) !important;
+}
+.accordion-header {
+  outline: none !important;
+  
+  transition: 0.7s ease-in-out !important;
+  
+  margin-bottom: 10px;
+}
+.accordion-button.show .accordion{
+  background-color:green !important;
+}
+.accordion-item{
+  outline: none !important;
+  
+  transition: 0.7s ease-in-out !important;
+  border-radius: 20px !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  margin-bottom: 10px !important;
+  
+  border: none !important;
+}
+.accordion-button{
+color: var(--text_white) !important;
+  background-color: var(--bg_grey) !important;
+}
+
+.accordion-button::after {
+  font-size: 1px !important;
+  border-radius: 50% !important;
+  color: var(--text_white) !important;
+background-color: var(--text_dark) !important;
+}
+
+
+.accordion-button::after {
+  display: none !important;
+}
+
+.custom-arrow {
+  color: white !important;
+  background-color: var(--bg-dark) !important;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) .custom-arrow {
+  transform: rotate(180deg);
+  color: white !important;
+}
+
