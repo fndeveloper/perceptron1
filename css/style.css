@@ -377,6 +377,9 @@ color: var(--text-dark) !important;
  a{
   word-break: normal !important;
 }
+.circle-container svg textPath {
+  fill: var(--text_dark) !important; /* text ka color */
+}
 
 .div_of_serivce h2:hover + .position-relative .div_of_serivce_hr_w {
   width: 86.5%; 
