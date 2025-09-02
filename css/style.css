@@ -160,19 +160,34 @@ border: none ;
   position: relative;
   width: 150px;
   height: 25px;
+  /* background-color: green !important; */
 
 }
 
-/* Center image CSS */
 .center-image {
   position: absolute;
   top: 320% !important;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  padding: 1px !important;
 }
+@media (max-width:992px) {
+  .center-image {
+  position: absolute;
+  top: 250% !important;
+  left: 50%;
+  transform: translate(-40%, -40%);
+  border-radius: 50%;
+}
+.circle-container {
+  position: relative;
+  width: 100px;
+  height: 15px;
+  top: -50px !important;
+  /* background-color: green !important; */
 
+}
+}
 /* Spinning text CSS */
 .spinning {
   height: 300px !important;
