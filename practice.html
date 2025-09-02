@@ -3,91 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Practice - Three.js Scroll Animation</title>
+  <title>AOS Scroll Animation Practice</title>
+
+  <!-- AOS CSS -->
+  <link 
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css" 
+    rel="stylesheet"
+  />
+
   <style>
     body {
       margin: 0;
-      height: 200vh; /* scroll effect देखने के लिए */
       font-family: Arial, sans-serif;
-      background: #111;
+      background: #1e1e1e;
       color: #fff;
+      overflow-x: hidden;
+    }
+
+    section {
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-
-    h2 {
-      font-size: 3rem;
+      flex-direction: column;
       text-align: center;
-      position: fixed;
-      top: 30%;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 10;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
-    h2 div {
-      display: block;
-      margin: 10px 0;
+    h1 {
+      font-size: clamp(2rem, 5vw, 4rem);
+      margin: 0 0 20px;
     }
 
-    canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      outline: none;
+    p {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      max-width: 600px;
+      line-height: 1.5;
     }
   </style>
 </head>
 <body>
-  <h2 class="arrox-el-title section-title font-sequelsans-romanbody t_line">
-    <div>What services</div>
-    <div>we provide you</div>
-    <div>actually</div>
-  </h2>
 
-  <!-- Three.js + GSAP + ScrollTrigger CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <section data-aos="fade-in" data-aos-duration="1000">
+    <h1>Welcome to AOS Demo</h1>
+    <p>Scroll down to see animations trigger on scroll.</p>
+  </section>
 
+  <section data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+    <h1>Fade Up Section</h1>
+    <p>This section fades up as it enters the viewport.</p>
+  </section>
+
+  <section data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+    <h1>Zoom In Section</h1>
+    <p>This section zooms in for a nice pop effect.</p>
+  </section>
+
+  <section data-aos="flip-left" data-aos-duration="1000" data-aos-offset="200">
+    <h1>Flip Left Section</h1>
+    <p>This section flips in from the left.</p>
+  </section>
+
+  <section data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="top-center">
+    <h1>Fade Right Section</h1>
+    <p>It fades in from the right when the top of it hits center of screen.</p>
+  </section>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    // Three.js Scene
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({ alpha: true });
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
-
-    // Add cube (demo background effect)
-    const geometry = new THREE.BoxGeometry();
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ffcc, wireframe: true });
-    const cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
-
-    camera.position.z = 5;
-
-    function animate() {
-      requestAnimationFrame(animate);
-      cube.rotation.x += 0.01;
-      cube.rotation.y += 0.01;
-      renderer.render(scene, camera);
-    }
-    animate();
-
-    // GSAP + ScrollTrigger animation
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.to("h2", {
-      scrollTrigger: {
-        trigger: "body",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true
-      },
-      x: "-40vw", // left side
-      textAlign: "left",
-      ease: "power2.out"
+    AOS.init({
+      offset: 120, // start animation 120px before element enters viewport
+      duration: 200, // default duration
+      easing: 'ease-in-out', // default easing
+      once: false, // animate only once on scroll down
     });
   </script>
 </body>

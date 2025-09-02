@@ -130,6 +130,7 @@ setTimeout(() => {
   document.body.classList.add("anim")
   document.body.style.overflow = "visible"; 
 }, 4000);
+ 
     // ==== LOADER REMOVE CODE END ==========
 
 })
