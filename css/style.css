@@ -298,12 +298,13 @@ color: var(--text-dark) !important;
     outline: none !important;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px !important;
     box-shadow: none !important;
-background-color: white !important;
     opacity: 0;
     z-index: -1;
     margin-top: 11px !important;
     visibility: hidden !important;
     display: block;
+    background-color: var(--bg-light) !important;
+    color: var(--text_light) !important;
     transition: 0.7s ease-in-out !important;
 }
 .service_dropdown_menu{
@@ -314,7 +315,8 @@ background-color: white !important;
     outline: none !important;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px !important;
     box-shadow: none !important;
-background-color: white !important;
+    background-color: var(--bg-light) !important;
+    color: var(--text_light) !important;
     opacity: 0;
     z-index: -1;
     visibility: hidden !important;
