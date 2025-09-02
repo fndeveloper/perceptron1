@@ -15,6 +15,8 @@
     <!-- EXTERNEL FILE CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- FONT AWESOME (ICONS) CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- FONT AWESOME (ICONS) CDN -->
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -22,18 +24,35 @@
   </head>
   <body>
 
-<!-- =========== LOADER CODE START ================ -->
-<div id="loader"></div>
-<!-- =========== LOADER CODE END ================ -->
+    <!-- =========== LOADER CODE START ================ -->
+    <div id="loader"></div>
+    <!-- =========== LOADER CODE END ================ -->
 
     <!-- ============ HEADER CODE START ============== -->
     <div id="header"></div>
     <!-- ============ HEADER CODE END ============== -->
 
     <!-- ================= BANNER CODE START ============== -->
-    <section>
+    <section
+       data-aos="fade"
+     data-aos-offset="200"
+     data-aos-delay="5000"
+     data-aos-duration="1000"
+     data-aos-easing="ease-in-out"
+     data-aos-mirror="true"
+     data-aos-once="false"
+      >
       <div
-        class="container-fluid h_85v pb-4 bg_white w_97vw all_div_round  d-flex flex-column justify-content-center">
+        class="container-fluid h_85v pb-4 bg_white w_97vw all_div_round  d-flex flex-column justify-content-center"
+        data-aos="fade-up"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="5000"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
         <!-- =========== ROW 1 CODE START ================= -->
         <div class="row d-flex flex-row justify-content-end align-items-center">
           <div
@@ -44,18 +63,18 @@
                 class="center-image img-fluid col-9  " />
 
               <!-- Spinning Circular Text -->
-              <svg viewBox="0 0 200 200" >
-                <g class="spinning" >
+              <svg viewBox="0 0 200 200">
+                <g class="spinning">
                   <defs>
-                    <path id="circlePath"  d="
+                    <path id="circlePath" d="
           M 100, 100
           m -75, 0
           a 75,75 0 1,1 150,0
           a 75,75 0 1,1 -150,0
         " />
                   </defs>
-                  <text dy="-14" >
-                    <textpath  xlink:href="#circlePath"  dy="0">
+                  <text dy="-14">
+                    <textpath xlink:href="#circlePath" dy="0">
                       Exploring Minds Artificially... Exploring Minds
                       Artificially...
                     </textpath>
@@ -78,437 +97,13 @@
             class="display-1 font-family-Funnel  col-12 text-end fs_7v py-5 text_light">
             <span
               class="text_light   font-family-Funnel text-center col-12 text-end ">
-            AI,  Machine & Deep Learning, GRC, Web & App Development Company!
-                   </h2>
+              AI, Machine & Deep Learning, GRC, Web & App Development Company!
+            </h2>
 
-          <div class="d-flex flex-row justify-content-between align-items-center">
-          <button class="btn_d d-flex align-items-center col-lg-2 col-6 py-2">
-            <span
-              class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
-              <i class="fa-solid fa-plus"></i>
-            </span>
-            <span class="text-light ps-2 fw-medium fs-6">
-              BOOK A CALL
-            </span>
-          </button>
-
-               <div
-            class="col-lg-5 d-lg-none d-flex flex-row justify-content-center align-items-center ">
-            <div class="circle-container col-12  ">
-              <!-- Center Image -->
-              <img src="assets/image/ai_face_image.png" alt="Center Image"
-                class="center-image img-fluid col-9  " />
-
-              <!-- Spinning Circular Text -->
-              <svg viewBox="0 0 200 200" >
-                <g class="spinning" >
-                  <defs>
-                    <path id="circlePath"  d="
-          M 100, 100
-          m -75, 0
-          a 75,75 0 1,1 150,0
-          a 75,75 0 1,1 -150,0
-        " />
-                  </defs>
-                  <text dy="-14" >
-                    <textpath  xlink:href="#circlePath"  dy="0">
-                      Exploring Minds Artificially... Exploring Minds
-                      Artificially...
-                    </textpath>
-                  </text>
-                </g>
-              </svg>
-            </div>
-
-          </div>
-</div>
-
-
-
-        </div>
-        <!-- =========== ROW 2 CODE START ================= -->
-
-      </div>
-    </section>
-    <!-- ================= BANNER CODE END ============== -->
-
-    <!-- ===================== ABOUT SECTION CODE START ================== -->
-    <section>
-      <div class="container-fluid d-flex flex-column py-5">
-        <div class="row text_light">
-          <h5 class="font-family-Funnel text-uppercase fs-6 fw-light">About
-            Company</h5>
-          <hr>
-        </div>
-      </div>
-
-      <div class="d-flex flex-lg-row flex-column">
-        <div class="col-lg-3 h-100">
-          <div
-            class="col-lg-11 shadow-sm ms-auto me-2 bg_white p-3 all_div_round text_light ">
-            <h2 class="fs_8v  font-family-Inter text_dark">25<span
-                class="mt-3 fw-lighter text_light">+</span></h2>
-            <span class="font-family-Inter">
-              Years of experienced Consultants & Team of Experts Developers 
-            </span>
-            <hr>
-            <p class="py-3 font-family-Inter fs-5">
-             More than 1500 + Projects completed world wide!
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <img
-            src="https://floka.casethemes.net/wp-content/uploads/2025/06/home4-img4.jpg"
-            class="img-fluid h-100 all_div_round" alt>
-        </div>
-        <div class="col-lg-3">
-          <div class="col-lg-11 col-12 mx-auto  ">
             <div
-              class="col-12  text_dark shadow-sm bg_white  all_div_round p-3 mb-2">
-        
-              <h5 class="font-family-Funnel">
-              Follow us on our Social Medias
-              </h5>
-              <div class="pt-5 mt-1 pb-1 font-family-Funnel d-flex flex-wrap">
-
-                <a href
-                  class="fw-normal text-decoration-none border-1 border rounded_3 text-uppercase fs_6 px-3 py-1 text_dark  mx-1 mb-2">Facebook</a>
-                <a href
-                  class="fw-normal text-decoration-none border-1 border rounded_3 text-uppercase fs_6 px-3 py-1 text_dark  mx-1 mb-2">Linkedin</a>
-                <a href
-                  class="fw-normal text-decoration-none border-1 border rounded_3 text-uppercase fs_6 px-3 py-1 text_dark  mx-1 mb-2">X / Twiiter</a>
- <a href
-                  class="fw-normal text-decoration-none border-1 border rounded_3 text-uppercase fs_6 px-3 py-1 text_dark  mx-1 mb-2">YouTube</a>
-
-              </div>
-            </div>
-            <div class="col-12 shadow-sm bg_white all_div_round p-3 text_dark">
-              <p class="font-family-Inter">
-                Empressions
-              </p>
-
-              <div class="pt-5 mt-1 pb-2 font-family-Funnel d-flex flex-wrap">
-
-                <div
-                  class="col-12 d-flex flex-row justify-content-between bg_light shadow  px-2 rounded_3">
-                  <p>Solution</p>
-                  <p>100%</p>
-
-                </div>
-                <div
-                  class="col-10 text_light d-flex flex-row justify-content-between bg_dark text_light shadow  px-2 rounded_3">
-                  <p>UI/UX
-                  </p>
-                  <p>90%</p>
-
-                </div> <div
-                  class="col-8 d-flex flex-row justify-content-between bg_light shadow  px-2 rounded_3">
-                  <p>Explore</p>
-                  <p>80%</p>
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ===================== ABOUT SECTION CODE END ================== -->
-
-    <!-- ==================== TAGLINE CODE START =================== -->
-
-    <section>
-      <div class="container mx-auto py-5 m-0 p-0">
-        <div class="tag_animtaion">
-
-          <h2 class="fs_8v font-family-Funnel pe-5">
-            See how our team combines creativity, technology, and strategy
-          </h2>
-          <h2 class="fs_8v font-family-Funnel ps-5">
-            See how our team combines creativity, technology, and strategy
-          </h2>
-
-        </div>
-      </div>
-
-    </section>
-    <!-- ==================== TAGLINE CODE END =================== -->
-
-    <!-- ===================== SERVICE SECTION CODE START ================ -->
-    <section>
-      <div class="container-fluid bg_dark w_97vw all_div_round py-5">
-        <!-- ============ ROW 1 CODE START ========= -->
-        <div class="row text_light">
-          <h5 class="font-family-Funnel text-uppercase fs-6 fw-light">Our
-            Service</h5>
-          <hr>
-          <div class="col-6 ms-lg-auto">
-            <h4 class="fw-light font-family-Funnel">
-              Here to help with everything from small updates to full-scale
-              redesigns, tailored to your evolving needs.
-            </h4>
-          </div>
-        </div>
-        <!-- ============ ROW 1 CODE END ========= -->
-
-        <!-- ============ ROW 2 CODE START ========= -->
-        <div
-          class="container-fluid d-lg-flex d-none flex-lg-row flex-column py-5"
-          style="display:flex;gap:20px;">
-
-          <div class="col-lg-4 all_cards d-lg-flex d-none">
-            <!-- ===== AI PRODUCT CODE START ============ -->
-            <div class="col-10 bg_grey p-2 all_div_round ai_product">
-              <img src="assets/service_card_images/ai_product_card_img.png"
-                class="img-fluid h_400px col-12 all_div_round"
-                alt="AI PRODUCT SOLUTION">
-              <div class="pt-3 font-family-Funnel text_light">
-                <h5 class="text-white">AI Product Soluton</h5>
-                <p>
-                  Digital designs that help brands move faster and convert
-                  better.
-                </p>
-              </div>
+              class="d-flex flex-row justify-content-between align-items-center">
               <button
-                class="btn_d d-flex align-items-center col-lg-12 col-6 py-2">
-                <span
-                  class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
-                  <i class="fa-solid fa-plus"></i>
-                </span>
-                <span class="text-light ps-2 fw-medium fs-6">
-                  See More
-                </span>
-              </button>
-              <!-- =========  AI PRODUCT CODE END ================= -->
-            </div>
-
-            <!-- ============= GRC SERVICE CODE START ====================  -->
-            <div class="col-10 bg_grey p-2 all_div_round grc_product">
-              <img src="assets/service_card_images/grc_service_card_img.png"
-                class="img-fluid h_400px col-12 all_div_round"
-                alt="GRC SERVICE">
-              <div class="pt-3 font-family-Funnel text_light">
-                <h5 class="text-white">GRC Service </h5>
-                <p>
-                  Digital designs that help brands move faster and convert
-                  better.
-                </p>
-              </div>
-
-              <button
-                class="btn_d d-flex align-items-center col-lg-12 col-6 py-2">
-                <span
-                  class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
-                  <i class="fa-solid fa-plus"></i>
-                </span>
-                <span class="text-light ps-2 fw-medium fs-6">
-                  See More
-                </span>
-              </button>
-            </div>
-
-            <!-- ============== GRC SERVI CE CODE END ========================= -->
-
-            <!-- ==================== WEB DEV CODE START ==================== -->
-            <div class="col-10 bg_grey p-2 all_div_round web_product">
-              <img
-                src="assets/service_card_images/ai_driven_web_and_dev_card_img.png"
-                class="img-fluid h_400px col-12 all_div_round" alt="WEB DEV">
-              <div class="pt-3 font-family-Funnel text_light">
-                <h5 class="text-white">AI Driven Web & App Development</h5>
-                <p>
-                  Digital designs that help brands move faster and convert
-                  better.
-                </p>
-              </div>
-
-              <button
-                class="btn_d d-flex align-items-center col-lg-12 col-6 py-2">
-                <span
-                  class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
-                  <i class="fa-solid fa-plus"></i>
-                </span>
-                <span class="text-light ps-2 fw-medium fs-6">
-                  See More
-                </span>
-              </button>
-            </div>
-            <!-- =================== WEB DEV CODE END ========================== -->
-          </div>
-
-          <div class="col-lg-8 d-lg-flex d-none div_of_serivce">
-            <div class="col-lg-11 ms-auto">
-              <div class="mb-2 py-3 ai_product_div">
-                <h2 class=" fs_7v font-family-Funnel">AI Product Solution</h2>
-                <div class="position-relative">
-                  <hr
-                    class="bg_light div_of_serivce_hr   col-lg-11 position-absolute">
-                  <hr
-                    class="bg_white div_of_serivce_hr_w top-0   position-absolute top-0 ">
-                </div>
-              </div>
-              <div class="mb-2 py-3 grc_product_div">
-                <h2 class=" fs_7v font-family-Funnel">GRC Service</h2>
-                <div class="position-relative">
-                  <hr
-                    class="bg_light div_of_serivce_hr   col-lg-11 position-absolute">
-                  <hr
-                    class="bg_white div_of_serivce_hr_w top-0   position-absolute top-0 ">
-                </div>
-              </div>
-              <div class="mb-2 py-3 web_product_div">
-                <h2 class=" fs_7v font-family-Funnel">AI Driven Web & App
-                  Development</h2>
-                <div class="position-relative">
-                  <hr
-                    class="bg_light div_of_serivce_hr   col-lg-11 position-absolute">
-                  <hr
-                    class="bg_white div_of_serivce_hr_w top-0   position-absolute top-0 ">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ============ ROW 2 CODE START ========= -->
-        <!-- ================== ROW 2 FOR MD SCREEEN CODE START ================= -->
-        <div class="container-fluid d-lg-none d-flex">
-          <div class="col-lg-12">
-            <!-- ===== AI PRODUCT CODE START ============ -->
-            <div class="col-12 mb-2 bg_grey p-2 all_div_round ai_product">
-              <img src="assets/service_card_images/ai_product_card_img.png"
-                class="img-fluid h_400px col-12 all_div_round"
-                alt="AI PRODUCT SOLUTION">
-              <div class="pt-3 font-family-Funnel text_light">
-                <h5 class="text-white">AI Product Soluton</h5>
-                <p>
-                  Digital designs that help brands move faster and convert
-                  better.
-                </p>
-              </div>
-              <button
-                class="btn_d d-flex align-items-center col-lg-12 col-6 py-2">
-                <span
-                  class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
-                  <i class="fa-solid fa-plus"></i>
-                </span>
-                <span class="text-light ps-2 fw-medium fs-6">
-                  See More
-                </span>
-              </button>
-              <!-- =========  AI PRODUCT CODE END ================= -->
-            </div>
-
-            <!-- ============= GRC SERVICE CODE START ====================  -->
-            <div class="col-12 mb-2 bg_grey p-2 all_div_round grc_product">
-              <img src="assets/service_card_images/grc_service_card_img.png"
-                class="img-fluid h_400px col-12 all_div_round"
-                alt="GRC SERVICE">
-              <div class="pt-3 font-family-Funnel text_light">
-                <h5 class="text-white">GRC Service </h5>
-                <p>
-                  Digital designs that help brands move faster and convert
-                  better.
-                </p>
-              </div>
-
-              <button
-                class="btn_d d-flex align-items-center col-lg-12 col-6 py-2">
-                <span
-                  class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
-                  <i class="fa-solid fa-plus"></i>
-                </span>
-                <span class="text-light ps-2 fw-medium fs-6">
-                  See More
-                </span>
-              </button>
-            </div>
-
-            <!-- ============== GRC SERVI CE CODE END ========================= -->
-
-            <!-- ==================== WEB DEV CODE START ==================== -->
-            <div class="col-12 mb-2 bg_grey p-2 all_div_round web_product">
-              <img
-                src="assets/service_card_images/ai_driven_web_and_dev_card_img.png"
-                class="img-fluid h_400px col-12 all_div_round" alt="WEB DEV">
-              <div class="pt-3 font-family-Funnel text_light">
-                <h5 class="text-white">AI Driven Web & App Development</h5>
-                <p>
-                  Digital designs that help brands move faster and convert
-                  better.
-                </p>
-              </div>
-
-              <button
-                class="btn_d d-flex align-items-center col-lg-12 col-6 py-2">
-                <span
-                  class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
-                  <i class="fa-solid fa-plus"></i>
-                </span>
-                <span class="text-light ps-2 fw-medium fs-6">
-                  See More
-                </span>
-              </button>
-            </div>
-            <!-- =================== WEB DEV CODE END ========================== -->
-          </div>
-        </div>
-        <!-- ================== ROW 2 FOR MD SCREEEN CODE END ================= -->
-
-      </div>
-    </section>
-    <!-- ===================== SERVICE SECTION CODE END =========================== -->
-
-    <!-- =================== FUN FACRT CODE START ======================= -->
-    <section>
-      <div class="container-fluid py-5  d-flex flex-column">
-        <div class="container-fluid d-flex flex-column text_light ">
-          <h5 class="font-family-Funnel text-uppercase fs-6 fw-light">FUN
-            FACT</h5>
-          <hr>
-          <div class="col-6 ms-lg-auto text_dark">
-            <h2 class="fw-light font-family-Funnel">
-              Capturing moments that tell your story and bring emotions to real
-              life. </h2>
-          </div>
-        </div>
-
-        <!-- ========= ROW 2 CODE START ======== -->
-        <div class="container-fluid py-5 d-flex flex-lg-row flex-column ">
-          <div class="col-lg-4">
-            <div
-              class="col-lg-11 bg_dark py-4 px-2 all_div_round d-flex flex-column">
-              <!-- ===== AI FASCE CODE START ==== -->
-
-              <div class="position-relative d-inline-block col-8">
-                <!-- SVG Circle Text -->
-                <svg viewBox="0 0 300 300"
-                  class="w-100 h-100 position-relative text_light">
-                  <defs>
-                    <path id="circlePath" class="text_light"
-                      d="M150,150 m-120,0 a120,120 0 1,1 240,0 a120,120 0 1,1 -240,0" />
-                  </defs>
-
-                  <!-- Text Around Circle -->
-                  <text font-size="14" fill="#ffff" font-weight="normal">
-                    <textpath href="#circlePath" startOffset="0%">
-                      ✦ Exploring Minds Artificially... ✦ Exploring Minds
-                      Artificially...
-                    </textpath>
-                  </text>
-                </svg>
-
-                <!-- Font Awesome Icon in Center -->
-                <!-- <i class="fa-solid fa-brain fa-3x position-absolute top-0 mt-5 text-center ms-5 ps-2 text_light start-0 "></i> -->
-              </div>
-
-              <!-- ======= AI FACE CODE END ===========  -->
-              <h6 class="text_light font-family-Funnel fs-3 col-10 mx-auto">
-                We design every project with long-term success in mind.
-              </h6>
-              <button
-                class="btn_d d-flex align-items-center col-lg-10 mx-auto my-3  col-6 py-2">
+                class="btn_d d-flex align-items-center col-lg-2 col-6 py-2">
                 <span
                   class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
                   <i class="fa-solid fa-plus"></i>
@@ -517,222 +112,726 @@
                   BOOK A CALL
                 </span>
               </button>
+
+              <div
+                class="col-lg-5 d-lg-none d-flex flex-row justify-content-center align-items-center ">
+                <div class="circle-container col-12  ">
+                  <!-- Center Image -->
+                  <img src="assets/image/ai_face_image.png" alt="Center Image"
+                    class="center-image img-fluid col-9  " />
+
+                  <!-- Spinning Circular Text -->
+                  <svg viewBox="0 0 200 200">
+                    <g class="spinning">
+                      <defs>
+                        <path id="circlePath" d="
+          M 100, 100
+          m -75, 0
+          a 75,75 0 1,1 150,0
+          a 75,75 0 1,1 -150,0
+        " />
+                      </defs>
+                      <text dy="-14">
+                        <textpath xlink:href="#circlePath" dy="0">
+                          Exploring Minds Artificially... Exploring Minds
+                          Artificially...
+                        </textpath>
+                      </text>
+                    </g>
+                  </svg>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- =========== ROW 2 CODE START ================= -->
+
+        </div>
+      </section>
+      <!-- ================= BANNER CODE END ============== -->
+
+      <!-- ===================== ABOUT SECTION CODE START ================== -->
+      <section  data-aos="fade-up"
+     data-aos-offset="200"
+     data-aos-delay="5000"
+     data-aos-duration="1000"
+     data-aos-easing="ease-in-out"
+     data-aos-mirror="true"
+     data-aos-once="false">
+        <div class="container-fluid d-flex flex-column py-5"   data-aos="fade-up"
+        
+        >
+          <div class="row text_light">
+            <h5 class="font-family-Funnel text-uppercase fs-6 fw-light">About
+              Company</h5>
+            <hr>
+          </div>
+        </div>
+
+        <div class="d-flex flex-lg-row flex-column">
+          <div class="col-lg-3 h-100">
+            <div
+              class="col-lg-11 shadow-sm ms-auto me-2 bg_white p-3 all_div_round text_light ">
+              <h2 class="fs_8v  font-family-Inter text_dark">25<span
+                  class="mt-3 fw-lighter text_light">+</span></h2>
+              <span class="font-family-Inter">
+                Years of experienced Consultants & Team of Experts Developers
+              </span>
+              <hr>
+              <p class="py-3 font-family-Inter fs-5">
+                More than 1500 + Projects completed world wide!
+              </p>
             </div>
           </div>
-          <div class="col-lg-7  d-flex flex-wrap justify-content-between ">
+          <div class="col-lg-6">
+            <img
+              src="https://floka.casethemes.net/wp-content/uploads/2025/06/home4-img4.jpg"
+              class="img-fluid h-100 all_div_round" alt>
+          </div>
+          <div class="col-lg-3">
+            <div class="col-lg-11 col-12 mx-auto  ">
+              <div
+                class="col-12  text_dark shadow-sm bg_white  all_div_round p-3 mb-2">
 
-            <!-- ===== DIV START ==== -->
-            <div class="col-lg-5  col-12 bg_whit p-2 all_div_round mb-2">
+                <h5 class="font-family-Funnel">
+                  Follow us on our Social Medias
+                </h5>
+                <div class="pt-5 mt-1 pb-1 font-family-Funnel d-flex flex-wrap">
+
+                  <a href
+                    class="fw-normal text-decoration-none border-1 border rounded_3 text-uppercase fs_6 px-3 py-1 text_dark  mx-1 mb-2">Facebook</a>
+                  <a href
+                    class="fw-normal text-decoration-none border-1 border rounded_3 text-uppercase fs_6 px-3 py-1 text_dark  mx-1 mb-2">Linkedin</a>
+                  <a href
+                    class="fw-normal text-decoration-none border-1 border rounded_3 text-uppercase fs_6 px-3 py-1 text_dark  mx-1 mb-2">X
+                    / Twiiter</a>
+                  <a href
+                    class="fw-normal text-decoration-none border-1 border rounded_3 text-uppercase fs_6 px-3 py-1 text_dark  mx-1 mb-2">YouTube</a>
+
+                </div>
+              </div>
               <div
-                class="d-flex flex-row justify-content-between m-0 p-0  align-items-center font-family-Funnel">
-                <p class="text-uppercase text_dark m-0 p-0">client reviews</p>
-                <p><i class="fa-solid fa-ranking-star m-0 p-0"></i></p>
-              </div>
-              <hr>
-              <div>
-                <h1 class="fs_8v text_dark font-family-Inter">25</h1>
-                <h5 class="font-family-Funnel text_light">My goal is to capture
-                  the real, raw emotions</h5>
-              </div>
-            </div>
-            <!-- ===== DIV END =========== -->
-            <!-- ===== DIV START ==== -->
-            <div class="col-lg-5   col-12 bg_whit p-2 all_div_round mb-2">
-              <div
-                class="d-flex flex-row justify-content-between m-0 p-0  align-items-center font-family-Funnel">
-                <p class="text-uppercase text_dark m-0 p-0">product launch</p>
-                <p><i class="fa-solid fa-ranking-star m-0 p-0"></i></p>
-              </div>
-              <hr>
-              <div>
-                <h1 class="fs_8v text_dark font-family-Inter">1k+</h1>
-                <h5 class="font-family-Funnel text_light">My goal is to capture
-                  the real, raw emotions</h5>
-              </div>
-            </div>
-            <!-- ===== DIV END =========== -->
-            <!-- ===== DIV START ==== -->
-            <div class="col-lg-5 col-12 bg_whit p-2 all_div_round mb-2">
-              <div
-                class="d-flex flex-row justify-content-between m-0 p-0  align-items-center font-family-Funnel">
-                <p class="text-uppercase text_dark m-0 p-0">ready team mates
+                class="col-12 shadow-sm bg_white all_div_round p-3 text_dark">
+                <p class="font-family-Inter">
+                  Empressions
                 </p>
-                <p><i class="fa-solid fa-ranking-star m-0 p-0"></i></p>
+
+                <div class="pt-5 mt-1 pb-2 font-family-Funnel d-flex flex-wrap">
+
+                  <div
+                    class="col-12 d-flex flex-row justify-content-between bg_light shadow  px-2 rounded_3">
+                    <p>Solution</p>
+                    <p>100%</p>
+
+                  </div>
+                  <div
+                    class="col-10 text_light d-flex flex-row justify-content-between bg_dark text_light shadow  px-2 rounded_3">
+                    <p>UI/UX
+                    </p>
+                    <p>90%</p>
+
+                  </div> <div
+                    class="col-8 d-flex flex-row justify-content-between bg_light shadow  px-2 rounded_3">
+                    <p>Explore</p>
+                    <p>80%</p>
+
+                  </div>
+                </div>
               </div>
-              <hr>
-              <div>
-                <h1 class="fs_8v text_dark font-family-Inter">20</h1>
-                <h5 class="font-family-Funnel text_light">My goal is to capture
-                  the real, raw emotions</h5>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===================== ABOUT SECTION CODE END ================== -->
+
+      <!-- ==================== TAGLINE CODE START =================== -->
+
+      <section
+       data-aos="linear"
+     data-aos-offset="200"
+     data-aos-delay="5000"
+     data-aos-duration="1000"
+     data-aos-easing="ease-in-out"
+     data-aos-mirror="true"
+     data-aos-once="false"
+      >
+        <div class="container mx-auto py-5 m-0 p-0">
+          <div class="tag_animtaion">
+
+            <h2 class="fs_8v font-family-Funnel pe-5">
+              See how our team combines creativity, technology, and strategy
+            </h2>
+            <h2 class="fs_8v font-family-Funnel ps-5">
+              See how our team combines creativity, technology, and strategy
+            </h2>
+
+          </div>
+        </div>
+
+      </section>
+      <!-- ==================== TAGLINE CODE END =================== -->
+
+      <!-- ===================== SERVICE SECTION CODE START ================ -->
+      <section
+       data-aos="fade"
+     data-aos-offset="200"
+     data-aos-delay="5000"
+     data-aos-duration="1000"
+     data-aos-easing="ease-in-out"
+     data-aos-mirror="true"
+     data-aos-once="false"
+      >
+        <div class="container-fluid bg_dark w_97vw all_div_round py-5">
+          <!-- ============ ROW 1 CODE START ========= -->
+          <div class="row text_light">
+            <h5 class="font-family-Funnel text-uppercase fs-6 fw-light">Our
+              Service</h5>
+            <hr>
+            <div class="col-6 ms-lg-auto">
+              <h4 class="fw-light font-family-Funnel">
+                Here to help with everything from small updates to full-scale
+                redesigns, tailored to your evolving needs.
+              </h4>
+            </div>
+          </div>
+          <!-- ============ ROW 1 CODE END ========= -->
+
+          <!-- ============ ROW 2 CODE START ========= -->
+          <div
+            class="container-fluid d-lg-flex d-none flex-lg-row flex-column py-5"
+            style="display:flex;gap:20px;">
+
+            <div class="col-lg-4 all_cards d-lg-flex d-none">
+              <!-- ===== AI PRODUCT CODE START ============ -->
+              <div class="col-10 bg_grey p-2 all_div_round ai_product">
+                <img src="assets/service_card_images/ai_product_card_img.png"
+                  class="img-fluid h_400px col-12 all_div_round"
+                  alt="AI PRODUCT SOLUTION">
+                <div class="pt-3 font-family-Funnel text_light">
+                  <h5 class="text-white">AI Product Soluton</h5>
+                  <p>
+                    Digital designs that help brands move faster and convert
+                    better.
+                  </p>
+                </div>
+                <button
+                  class="btn_d d-flex align-items-center col-lg-12 col-6 py-2">
+                  <span
+                    class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                  <span class="text-light ps-2 fw-medium fs-6">
+                    See More
+                  </span>
+                </button>
+                <!-- =========  AI PRODUCT CODE END ================= -->
+              </div>
+
+              <!-- ============= GRC SERVICE CODE START ====================  -->
+              <div class="col-10 bg_grey p-2 all_div_round grc_product">
+                <img src="assets/service_card_images/grc_service_card_img.png"
+                  class="img-fluid h_400px col-12 all_div_round"
+                  alt="GRC SERVICE">
+                <div class="pt-3 font-family-Funnel text_light">
+                  <h5 class="text-white">GRC Service </h5>
+                  <p>
+                    Digital designs that help brands move faster and convert
+                    better.
+                  </p>
+                </div>
+
+                <button
+                  class="btn_d d-flex align-items-center col-lg-12 col-6 py-2">
+                  <span
+                    class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                  <span class="text-light ps-2 fw-medium fs-6">
+                    See More
+                  </span>
+                </button>
+              </div>
+
+              <!-- ============== GRC SERVI CE CODE END ========================= -->
+
+              <!-- ==================== WEB DEV CODE START ==================== -->
+              <div class="col-10 bg_grey p-2 all_div_round web_product">
+                <img
+                  src="assets/service_card_images/ai_driven_web_and_dev_card_img.png"
+                  class="img-fluid h_400px col-12 all_div_round" alt="WEB DEV">
+                <div class="pt-3 font-family-Funnel text_light">
+                  <h5 class="text-white">AI Driven Web & App Development</h5>
+                  <p>
+                    Digital designs that help brands move faster and convert
+                    better.
+                  </p>
+                </div>
+
+                <button
+                  class="btn_d d-flex align-items-center col-lg-12 col-6 py-2">
+                  <span
+                    class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                  <span class="text-light ps-2 fw-medium fs-6">
+                    See More
+                  </span>
+                </button>
+              </div>
+              <!-- =================== WEB DEV CODE END ========================== -->
+            </div>
+
+            <div class="col-lg-8 d-lg-flex d-none div_of_serivce">
+              <div class="col-lg-11 ms-auto">
+                <div class="mb-2 py-3 ai_product_div">
+                  <h2 class=" fs_7v font-family-Funnel">AI Product Solution</h2>
+                  <div class="position-relative">
+                    <hr
+                      class="bg_light div_of_serivce_hr   col-lg-11 position-absolute">
+                    <hr
+                      class="bg_white div_of_serivce_hr_w top-0   position-absolute top-0 ">
+                  </div>
+                </div>
+                <div class="mb-2 py-3 grc_product_div">
+                  <h2 class=" fs_7v font-family-Funnel">GRC Service</h2>
+                  <div class="position-relative">
+                    <hr
+                      class="bg_light div_of_serivce_hr   col-lg-11 position-absolute">
+                    <hr
+                      class="bg_white div_of_serivce_hr_w top-0   position-absolute top-0 ">
+                  </div>
+                </div>
+                <div class="mb-2 py-3 web_product_div">
+                  <h2 class=" fs_7v font-family-Funnel">AI Driven Web & App
+                    Development</h2>
+                  <div class="position-relative">
+                    <hr
+                      class="bg_light div_of_serivce_hr   col-lg-11 position-absolute">
+                    <hr
+                      class="bg_white div_of_serivce_hr_w top-0   position-absolute top-0 ">
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- ===== DIV END =========== -->
-            <!-- ===== DIV START ==== -->
-            <div class="col-lg-5 col-12 bg_whit p-2 all_div_round mb-2">
+          </div>
+          <!-- ============ ROW 2 CODE START ========= -->
+          <!-- ================== ROW 2 FOR MD SCREEEN CODE START ================= -->
+          <div class="container-fluid d-lg-none d-flex">
+            <div class="col-lg-12">
+              <!-- ===== AI PRODUCT CODE START ============ -->
+              <div class="col-12 mb-2 bg_grey p-2 all_div_round ai_product">
+                <img src="assets/service_card_images/ai_product_card_img.png"
+                  class="img-fluid h_400px col-12 all_div_round"
+                  alt="AI PRODUCT SOLUTION">
+                <div class="pt-3 font-family-Funnel text_light">
+                  <h5 class="text-white">AI Product Soluton</h5>
+                  <p>
+                    Digital designs that help brands move faster and convert
+                    better.
+                  </p>
+                </div>
+                <button
+                  class="btn_d d-flex align-items-center col-lg-12 col-6 py-2">
+                  <span
+                    class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                  <span class="text-light ps-2 fw-medium fs-6">
+                    See More
+                  </span>
+                </button>
+                <!-- =========  AI PRODUCT CODE END ================= -->
+              </div>
+
+              <!-- ============= GRC SERVICE CODE START ====================  -->
+              <div class="col-12 mb-2 bg_grey p-2 all_div_round grc_product">
+                <img src="assets/service_card_images/grc_service_card_img.png"
+                  class="img-fluid h_400px col-12 all_div_round"
+                  alt="GRC SERVICE">
+                <div class="pt-3 font-family-Funnel text_light">
+                  <h5 class="text-white">GRC Service </h5>
+                  <p>
+                    Digital designs that help brands move faster and convert
+                    better.
+                  </p>
+                </div>
+
+                <button
+                  class="btn_d d-flex align-items-center col-lg-12 col-6 py-2">
+                  <span
+                    class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                  <span class="text-light ps-2 fw-medium fs-6">
+                    See More
+                  </span>
+                </button>
+              </div>
+
+              <!-- ============== GRC SERVI CE CODE END ========================= -->
+
+              <!-- ==================== WEB DEV CODE START ==================== -->
+              <div class="col-12 mb-2 bg_grey p-2 all_div_round web_product">
+                <img
+                  src="assets/service_card_images/ai_driven_web_and_dev_card_img.png"
+                  class="img-fluid h_400px col-12 all_div_round" alt="WEB DEV">
+                <div class="pt-3 font-family-Funnel text_light">
+                  <h5 class="text-white">AI Driven Web & App Development</h5>
+                  <p>
+                    Digital designs that help brands move faster and convert
+                    better.
+                  </p>
+                </div>
+
+                <button
+                  class="btn_d d-flex align-items-center col-lg-12 col-6 py-2">
+                  <span
+                    class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                  <span class="text-light ps-2 fw-medium fs-6">
+                    See More
+                  </span>
+                </button>
+              </div>
+              <!-- =================== WEB DEV CODE END ========================== -->
+            </div>
+          </div>
+          <!-- ================== ROW 2 FOR MD SCREEEN CODE END ================= -->
+
+        </div>
+      </section>
+      <!-- ===================== SERVICE SECTION CODE END =========================== -->
+
+      <!-- =================== FUN FACRT CODE START ======================= -->
+      <section
+       data-aos="fade"
+     data-aos-offset="200"
+     data-aos-delay="5000"
+     data-aos-duration="1000"
+     data-aos-easing="ease-in-out"
+     data-aos-mirror="true"
+     data-aos-once="false"
+      >
+        <div class="container-fluid py-5  d-flex flex-column">
+          <div class="container-fluid d-flex flex-column text_light ">
+            <h5 class="font-family-Funnel text-uppercase fs-6 fw-light">FUN
+              FACT</h5>
+            <hr>
+            <div class="col-6 ms-lg-auto text_dark">
+              <h2 class="fw-light font-family-Funnel">
+                Capturing moments that tell your story and bring emotions to
+                real
+                life. </h2>
+            </div>
+          </div>
+
+          <!-- ========= ROW 2 CODE START ======== -->
+          <div class="container-fluid py-5 d-flex flex-lg-row flex-column ">
+            <div class="col-lg-4">
               <div
-                class="d-flex flex-row justify-content-between m-0 p-0  align-items-center font-family-Funnel">
-                <p class="text-uppercase text_dark m-0 p-0">get support</p>
-                <p><i class="fa-solid fa-ranking-star m-0 p-0"></i></p>
-              </div>
-              <hr>
-              <div>
-                <h1 class="fs_8v text_dark font-family-Inter">24/7</h1>
-                <h5 class="font-family-Funnel text_light">My goal is to capture
-                  the real, raw emotions</h5>
+                class="col-lg-11 bg_dark py-4 px-2 all_div_round d-flex flex-column">
+                <!-- ===== AI FASCE CODE START ==== -->
+
+                <div class="position-relative d-inline-block col-8">
+                  <!-- SVG Circle Text -->
+                  <svg viewBox="0 0 300 300"
+                    class="w-100 h-100 position-relative text_light">
+                    <defs>
+                      <path id="circlePath" class="text_light"
+                        d="M150,150 m-120,0 a120,120 0 1,1 240,0 a120,120 0 1,1 -240,0" />
+                    </defs>
+
+                    <!-- Text Around Circle -->
+                    <text font-size="14" fill="#ffff" font-weight="normal">
+                      <textpath href="#circlePath" startOffset="0%">
+                        ✦ Exploring Minds Artificially... ✦ Exploring Minds
+                        Artificially...
+                      </textpath>
+                    </text>
+                  </svg>
+
+                  <!-- Font Awesome Icon in Center -->
+                  <!-- <i class="fa-solid fa-brain fa-3x position-absolute top-0 mt-5 text-center ms-5 ps-2 text_light start-0 "></i> -->
+                </div>
+
+                <!-- ======= AI FACE CODE END ===========  -->
+                <h6 class="text_light font-family-Funnel fs-3 col-10 mx-auto">
+                  We design every project with long-term success in mind.
+                </h6>
+                <button
+                  class="btn_d d-flex align-items-center col-lg-10 mx-auto my-3  col-6 py-2">
+                  <span
+                    class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
+                    <i class="fa-solid fa-plus"></i>
+                  </span>
+                  <span class="text-light ps-2 fw-medium fs-6">
+                    BOOK A CALL
+                  </span>
+                </button>
               </div>
             </div>
-            <!-- ===== DIV END =========== -->
+            <div class="col-lg-7  d-flex flex-wrap justify-content-between ">
+
+              <!-- ===== DIV START ==== -->
+              <div class="col-lg-5  col-12 bg_whit p-2 all_div_round mb-2">
+                <div
+                  class="d-flex flex-row justify-content-between m-0 p-0  align-items-center font-family-Funnel">
+                  <p class="text-uppercase text_dark m-0 p-0">client reviews</p>
+                  <p><i class="fa-solid fa-ranking-star m-0 p-0"></i></p>
+                </div>
+                <hr>
+                <div>
+                  <h1 class="fs_8v text_dark font-family-Inter">25</h1>
+                  <h5 class="font-family-Funnel text_light">My goal is to
+                    capture
+                    the real, raw emotions</h5>
+                </div>
+              </div>
+              <!-- ===== DIV END =========== -->
+              <!-- ===== DIV START ==== -->
+              <div class="col-lg-5   col-12 bg_whit p-2 all_div_round mb-2">
+                <div
+                  class="d-flex flex-row justify-content-between m-0 p-0  align-items-center font-family-Funnel">
+                  <p class="text-uppercase text_dark m-0 p-0">product launch</p>
+                  <p><i class="fa-solid fa-ranking-star m-0 p-0"></i></p>
+                </div>
+                <hr>
+                <div>
+                  <h1 class="fs_8v text_dark font-family-Inter">1k+</h1>
+                  <h5 class="font-family-Funnel text_light">My goal is to
+                    capture
+                    the real, raw emotions</h5>
+                </div>
+              </div>
+              <!-- ===== DIV END =========== -->
+              <!-- ===== DIV START ==== -->
+              <div class="col-lg-5 col-12 bg_whit p-2 all_div_round mb-2">
+                <div
+                  class="d-flex flex-row justify-content-between m-0 p-0  align-items-center font-family-Funnel">
+                  <p class="text-uppercase text_dark m-0 p-0">ready team mates
+                  </p>
+                  <p><i class="fa-solid fa-ranking-star m-0 p-0"></i></p>
+                </div>
+                <hr>
+                <div>
+                  <h1 class="fs_8v text_dark font-family-Inter">20</h1>
+                  <h5 class="font-family-Funnel text_light">My goal is to
+                    capture
+                    the real, raw emotions</h5>
+                </div>
+              </div>
+              <!-- ===== DIV END =========== -->
+              <!-- ===== DIV START ==== -->
+              <div class="col-lg-5 col-12 bg_whit p-2 all_div_round mb-2">
+                <div
+                  class="d-flex flex-row justify-content-between m-0 p-0  align-items-center font-family-Funnel">
+                  <p class="text-uppercase text_dark m-0 p-0">get support</p>
+                  <p><i class="fa-solid fa-ranking-star m-0 p-0"></i></p>
+                </div>
+                <hr>
+                <div>
+                  <h1 class="fs_8v text_dark font-family-Inter">24/7</h1>
+                  <h5 class="font-family-Funnel text_light">My goal is to
+                    capture
+                    the real, raw emotions</h5>
+                </div>
+              </div>
+              <!-- ===== DIV END =========== -->
+            </div>
+          </div>
+          <!-- ========= ROW 2 CODE END ======== -->
+
+        </div>
+      </section>
+      <!-- ===================== FUN FACT CODE END ============================ -->
+
+      <!-- ==================== CONTACT SECTION CODE START ====================== -->
+      <section
+       data-aos="fade"
+     data-aos-offset="200"
+     data-aos-delay="5000"
+     data-aos-duration="1000"
+     data-aos-easing="ease-in-out"
+     data-aos-mirror="true"
+     data-aos-once="false"
+      >
+        <!-- ============ ROW 1 CODE START ========= -->
+        <div class="container-fluid d-flex flex-column">
+          <div class="row text_light">
+            <h5 class="font-family-Funnel text-uppercase fs-6 fw-light">Get in
+              touch</h5>
+            <hr>
+            <div class="col-6 ms-lg-auto">
+              <h4 class="fw-light font-family-Funnel text_dark">
+
+                Looking to book a session or just want to ask a few questions,
+                I’d
+                be glad to connect with you.
+              </h4>
+            </div>
           </div>
         </div>
-        <!-- ========= ROW 2 CODE END ======== -->
+        <!-- ============ ROW 1 CODE END ========= -->
 
-      </div>
-    </section>
-    <!-- ===================== FUN FACT CODE END ============================ -->
+        <!-- ============ ROW 2 CODE START ========= -->
+        <div
+          class="container-fluid d-flex flex-lg-row flex-column py-5 font-family-Funnel">
+          <div class="col-lg-5 d-flex flex-row align-items-end">
+            <div
+              class="bg_white p-2 shadow all_div_round p-4 font-family-Funnel fw-lighter text_light">
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="fa-solid fa-phone me-2 text_light"></i> +44 7783
+                  530138
+                </li>
+                <li class="mb-2">
+                  <i class="fa-solid fa-envelope me-2 text_light"></i>
+                  info@perceptronglobal.com
+                </li>
+                <li class="mb-2">
+                  <i class="fa-solid fa-location-dot me-2 text_light"></i>
+                  404 Old Bedford Road, Luton, England LU2 7BP
+                </li>
+                <li>
+                  <i class="fa-solid fa-briefcase me-2 text_light"></i> SIC
+                  codes -
+                  62012
+                </li>
+              </ul>
 
-    <!-- ==================== CONTACT SECTION CODE START ====================== -->
-    <section>
-      <!-- ============ ROW 1 CODE START ========= -->
-      <div class="container-fluid d-flex flex-column">
-        <div class="row text_light">
-          <h5 class="font-family-Funnel text-uppercase fs-6 fw-light">Get in
-            touch</h5>
-          <hr>
-          <div class="col-6 ms-lg-auto">
-            <h4 class="fw-light font-family-Funnel text_dark">
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="col-12 bg_white p-3 all_div_round">
+              <form id="contactForm" name="contactForm" action="#" method="post"
+                class="p-2 contact_form_index">
+                <div class="row g-3">
 
-              Looking to book a session or just want to ask a few questions, I’d
-              be glad to connect with you.
-            </h4>
+                  <!-- Subject -->
+                  <div class="col-12">
+                    <input type="text" class="form-control" id="subject"
+                      name="subject" placeholder="Enter Subject">
+                  </div>
+
+                  <!-- Message -->
+                  <div class="col-12">
+                    <textarea class="form-control" id="message1" name="message1"
+                      rows="2" placeholder="Enter Your Query"></textarea>
+                  </div>
+
+                  <!-- Name -->
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" id="nm1" name="nm1"
+                      placeholder="Enter your name">
+                  </div>
+
+                  <!-- Email -->
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" id="emailadd"
+                      name="emailadd" placeholder="Enter Your Email Please!">
+                  </div>
+
+                  <!-- Phone -->
+                  <div class="col-12">
+                    <input type="text" class="form-control" id="tel" name="tel"
+                      placeholder="Enter Your Number Please">
+                  </div>
+
+                  <!-- Captcha Text -->
+                  <div class="col-12 form-contro bg-transparent text_dark">
+
+                    CAPTCHA: <strong>NULKQJ</strong>
+                  </div>
+
+                  <!-- Captcha Input -->
+                  <div class="col-12">
+                    <input type="text" class="form-control" id="captcha"
+                      name="captcha" placeholder="Enter Captcha Please">
+                  </div>
+
+                  <!-- Hidden + Submit -->
+                  <div class="col-12">
+                    <button
+                      class="btn_d d-flex align-items-center col-lg-6 col-6 py-2">
+                      <span
+                        class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
+                        <i class="fa-solid fa-plus"></i>
+                      </span>
+                      <span class="text-light ps-2 fw-medium fs-6">
+                        Submit
+                      </span>
+                    </button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
           </div>
         </div>
-      </div>
-      <!-- ============ ROW 1 CODE END ========= -->
+        <!-- ============ ROW 2 CODE START ========= -->
 
-      <!-- ============ ROW 2 CODE START ========= -->
-      <div class="container-fluid d-flex flex-lg-row flex-column py-5 font-family-Funnel">
-        <div class="col-lg-5 d-flex flex-row align-items-end">
-          <div class="bg_white p-2 shadow all_div_round p-4 font-family-Funnel fw-lighter text_light">
-            <ul class="list-unstyled">
-              <li class="mb-2">
-                <i class="fa-solid fa-phone me-2 text_light"></i> +44 7783 530138
-              </li>
-              <li class="mb-2">
-                <i class="fa-solid fa-envelope me-2 text_light"></i>
-                info@perceptronglobal.com
-              </li>
-              <li class="mb-2">
-                <i class="fa-solid fa-location-dot me-2 text_light"></i>
-                404 Old Bedford Road, Luton, England LU2 7BP
-              </li>
-              <li>
-                <i class="fa-solid fa-briefcase me-2 text_light"></i> SIC codes -
-                62012
-              </li>
-            </ul>
+      </section>
+      <!-- ==================== CONTACT SECTION CODE END ====================== -->
 
+      <!-- ================ CEO MESSAGE CODE START ===================== -->
+      <section
+       data-aos="fade"
+     data-aos-offset="200"
+     data-aos-delay="5000"
+     data-aos-duration="1000"
+     data-aos-easing="ease-in-out"
+     data-aos-mirror="true"
+     data-aos-once="false"
+      >
+        <div
+          class="container-fluid d-flex flex-row justify-content-center align-items-center py-5">
+          <div
+            class="col-lg-9 col-12 py-5 bg_dark all_div_round p-5 text_light">
+            <h2
+              class="fs-4 fw-light text-center lh-sm font-family-Funnel custom-line-height">
+              AI is the future, and if people have fear the after coming of AI
+              the usual jobs will wipe out from the market, So they are totally
+              wrong. It is same situation when computers comes in the business
+              and people have fear that their jobs will not sustain or remained.
+              But we have seen! that more jobs were created and revolutionary
+              jobs came into the Market. Same as AI will create more Jobs and
+              more opportunities, So we must be ready for future...
+            </h2>
+
+            <div
+              class="mx-auto col-12 d-flex flex-row justify-content-center align-items-center">
+              <button
+                class="bg_white btn_ceo col-lg-4 col-12 all_div_round d-flex flex-row  justify-content-center my-2 align-items-center">
+                <i
+                  class="fa-solid fa-user bg_dark p-3 rounded-circle text-white"></i>
+                <p
+                  class="d-flex flex-row align-items-center mt-3 ps-3 font-family-Funnel fs-5 text_dark">
+                  CEO Message
+                </p>
+              </button>
+            </div>
           </div>
         </div>
-        <div class="col-lg-7">
-          <div class="col-12 bg_white p-3 all_div_round">
-      <form id="contactForm" name="contactForm" action="#" method="post" class="p-2 contact_form_index">
-  <div class="row g-3">
+      </section>
+      <!-- ================ CEO MESSAGE CODE START ===================== -->
 
-    <!-- Subject -->
-    <div class="col-12">
-      <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
-    </div>
+      <!-- ============== FOOTER CODE START =================== -->
+      <div id="footer"></div>
+      <!-- ============== FOOTER CODE END =================== -->
 
-    <!-- Message -->
-    <div class="col-12">
-      <textarea class="form-control" id="message1" name="message1" rows="2" placeholder="Enter Your Query"></textarea>
-    </div>
+      <!-- BOOTSTRAP 5 CDN  JS -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+      <!-- EXTERNAL JS  -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script src="js/app.js"></script>
 
-    <!-- Name -->
-    <div class="col-md-6">
-      <input type="text" class="form-control" id="nm1" name="nm1" placeholder="Enter your name">
-    </div>
-
-    <!-- Email -->
-    <div class="col-md-6">
-      <input type="email" class="form-control" id="emailadd" name="emailadd" placeholder="Enter Your Email Please!">
-    </div>
-
-    <!-- Phone -->
-    <div class="col-12">
-      <input type="text" class="form-control" id="tel" name="tel" placeholder="Enter Your Number Please">
-    </div>
-
-    <!-- Captcha Text -->
-    <div class="col-12 form-contro bg-transparent text_dark">
-      
-        CAPTCHA: <strong>NULKQJ</strong>
-      </div>
-
-    <!-- Captcha Input -->
-    <div class="col-12">
-      <input type="text" class="form-control" id="captcha" name="captcha" placeholder="Enter Captcha Please">
-    </div>
-
-    <!-- Hidden + Submit -->
-    <div class="col-12">
-  <button class="btn_d d-flex align-items-center col-lg-6 col-6 py-2">
-            <span
-              class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
-              <i class="fa-solid fa-plus"></i>
-            </span>
-            <span class="text-light ps-2 fw-medium fs-6">
-            Submit
-            </span>
-          </button>
-    </div>
-
-  </div>
-</form>
-
-          </div>
-        </div>
-      </div>
-      <!-- ============ ROW 2 CODE START ========= -->
-
-    </section>
-    <!-- ==================== CONTACT SECTION CODE END ====================== -->
-
-
-
-    <!-- ================ CEO MESSAGE CODE START ===================== -->
-     <section>
-      <div class="container-fluid d-flex flex-row justify-content-center align-items-center py-5">
-        <div class="col-lg-9 col-12 py-5 bg_dark all_div_round p-5 text_light">
-          <h2 class="fs-4 fw-light text-center lh-sm font-family-Funnel custom-line-height">
-            AI is the future, and if people have fear the after coming of AI the usual jobs will wipe out from the market, So they are totally wrong. It is same situation when computers comes in the business and people have fear that their jobs will not sustain or remained. But we have seen! that more jobs were created and revolutionary jobs came into the Market. Same as AI will create more Jobs and more opportunities, So we must be ready for future... 
-          </h2>
-
-          <div class="mx-auto col-12 d-flex flex-row justify-content-center align-items-center">
-            <button class="bg_white btn_ceo col-lg-4 col-12 all_div_round d-flex flex-row  justify-content-center my-2 align-items-center">
-<i class="fa-solid fa-user bg_dark p-3 rounded-circle text-white"></i>
-<p class="d-flex flex-row align-items-center mt-3 ps-3 font-family-Funnel fs-5 text_dark">
-  CEO Message
-</p>
-            </button>
-          </div>
-        </div>
-      </div>
-     </section>
-    <!-- ================ CEO MESSAGE CODE START ===================== -->
-
-<!-- ============== FOOTER CODE START =================== -->
- <div id="footer"></div>
-<!-- ============== FOOTER CODE END =================== -->
-
-
-    <!-- BOOTSTRAP 5 CDN  JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
-    <!-- EXTERNAL JS  -->
-    <script src="js/app.js"></script>
-
-  </body>
-</html>
+    </body>
+  </html>

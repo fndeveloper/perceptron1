@@ -136,3 +136,7 @@ setTimeout(() => {
 })
 }
 // ================= LOADER CODE END ==================
+document.addEventListener("DOMContentLoaded", function(){
+  AOS.init();
+});
+
