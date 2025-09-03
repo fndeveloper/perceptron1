@@ -129,7 +129,7 @@ setTimeout(() => {
   loader_div.style.display="none";
   document.body.classList.add("anim")
   document.body.style.overflow = "visible"; 
-}, 4000);
+},   4000);
  
     // ==== LOADER REMOVE CODE END ==========
 
@@ -139,4 +139,47 @@ setTimeout(() => {
 document.addEventListener("DOMContentLoaded", function(){
   AOS.init();
 });
+
+
+
+// ==================== ai_product_partial CODE START ==================================
+var ai_product_partial=document.getElementById("ai_product_partial");
+if(ai_product_partial){
+  fetch("../ai_product_partial.html")
+  .then((E)=>E.text())
+  .then(res=>{
+    ai_product_partial.innerHTML=res;
+  })
+}
+// ==================== ai_product_partial CODE END ================================
+
+
+
+
+
+
+
+// ====================== grc_service_partial CODE START ================================
+
+var grc_service_partial=document.getElementById("grc_service_partial");
+if(grc_service_partial){
+  fetch("../grc_service_partial.html")
+  .then((E)=>E.text())
+  .then(res=>{
+    grc_service_partial.innerHTML=res;
+  })
+}
+// ====================== grc_service_partial CODE END  ================================
+
+// ====================== ai_driver_web_service_partial CODE END  ================================
+var ai_driver_web_service_partial=document.getElementById("ai_driver_web_service_partial");
+if(ai_driver_web_service_partial){
+  fetch("../ai_driver_web_service_partial.html")
+  .then((E)=>E.text())
+  .then(res=>{
+    ai_driver_web_service_partial.innerHTML=res;
+  })
+}
+// ====================== ai_driver_web_service_partial CODE END  ================================
+
 

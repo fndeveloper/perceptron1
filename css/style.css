@@ -414,7 +414,7 @@ color: var(--text-dark) !important;
 
 
 /* ============= CONTACT FORM CODE START ===================== */
-.contact_form_index .form-control {
+ .form-control {
   border: 0px;
   color: var(--text_dark);
   padding: 15px 0px !important;
@@ -422,6 +422,16 @@ color: var(--text-dark) !important;
   background-color: var(--bg-white);
   border-bottom: 0.1px solid #949494 !important;
 }
+.form-select{
+  border: 0px;
+  color: var(--text_dark);
+  padding: 15px 0px !important;
+  border-radius: 0% !important;
+  background-color: var(--bg-white);
+  border-bottom: 0.1px solid #949494 !important;
+
+}
+
 /* ============== CONTACT FORM CODE END ====================== */
 
 .custom-line-height {
