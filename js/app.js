@@ -129,7 +129,7 @@ setTimeout(() => {
   loader_div.style.display="none";
   document.body.classList.add("anim")
   document.body.style.overflow = "visible"; 
-},   0);
+},  4000);
  
     // ==== LOADER REMOVE CODE END ==========
 
@@ -181,5 +181,17 @@ if(ai_driver_web_service_partial){
   })
 }
 // ====================== ai_driver_web_service_partial CODE END  ================================
+
+
+// ====================== client_partial CODE END  ================================
+var client_partial=document.getElementById("client_partial");
+if(client_partial){
+  fetch("../client_partial.html")
+  .then((E)=>E.text())
+  .then(res=>{
+    client_partial.innerHTML=res;
+  })
+}
+// ====================== client_partial CODE END  ================================
 
 

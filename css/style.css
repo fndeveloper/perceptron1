@@ -221,6 +221,36 @@ border: none ;
     animation: 18s tagtext linear infinite;
     color: var(--text_light);
 }
+.tag_animtaion1{
+    display:  flex !important;
+    width: 100%;
+    white-space: nowrap !important;
+    overflow: hidden;
+}
+.tag_animtaion1 div img{
+  
+  height: 120px !important;
+  width: 100% !important;
+object-fit: contain !important;
+}
+.tag_animtaion1 div{
+    transition: 0.7s ease-in-out !important;
+    animation:4s tagtext1 linear infinite;
+    color: var(--text_light);
+}
+@keyframes tagtext1 {
+  0% {
+    transform: translateX(10%);   /* right side se aayega */
+  
+  }
+
+
+  100% {
+    transform: translateX(-100%); /* left side se nikal jayega */
+   
+  }
+}
+
 @keyframes tagtext {
   0% {
     transform: translateX(10%);   /* right side se aayega */
