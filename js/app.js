@@ -195,3 +195,17 @@ if(client_partial){
 // ====================== client_partial CODE END  ================================
 
 
+
+
+// ====================== funfact CODE END  ================================
+var funfact=document.getElementById("funfact");
+if(funfact){
+  fetch("../funfact.html")
+  .then((E)=>E.text())
+  .then(res=>{
+    funfact.innerHTML=res;
+  })
+}
+// ====================== funfact CODE END  ================================
+
+

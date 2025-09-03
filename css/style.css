@@ -137,7 +137,13 @@ padding: 10px 5px !important;
 border: none ;
 border-radius: 40px !important;  
     transition: 0.3s ease-in-out !important;
+  border: 1px solid var(--text_dark) !important;
 
+}
+.btn_d:hover{
+  border: 1px solid var(--text_dark) !important;
+  color: black !important;
+  background-color: var(--bg-white) !important;
 }
 .btn_ceo{
   padding: 10px 5px !important;
@@ -169,7 +175,7 @@ border: none ;
   top: 50% !important;
   left: 50%;
   height:70% !important ;
-  transform: translate(-50%, -50%) rotateY(180deg) !important;
+  transform: translate(-50%, -50%) !important;
   border-radius: 50%;
 }
 @media (max-width:992px) {
