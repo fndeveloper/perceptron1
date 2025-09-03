@@ -168,8 +168,7 @@ border: none ;
   position: absolute;
   top: 50% !important;
   left: 50%;
-
-  height:75% !important ;
+  height:70% !important ;
   transform: translate(-50%, -50%) rotateY(180deg) !important;
   border-radius: 50%;
 }
@@ -193,7 +192,6 @@ border: none ;
 /* Spinning text CSS */
 .spinning {
   background-color: red !important;
-  height: 250px !important;
   transform-origin: 50% 50%;
   animation: spin 20s linear infinite;
 }
