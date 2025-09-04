@@ -63,7 +63,23 @@ theme.innerHTML =
 })
 
 // ============== THEME SET CODE END ========================
+// =========== INFO CANVAS CODE START ========================
+   const myCanvas = document.getElementById('myCanvas');
+  const dot = document.getElementById('dot');
 
+  // jab canvas open hoga
+  myCanvas.addEventListener('shown.bs.offcanvas', (e) => {
+    e.preventDefault()
+    dot.classList.add("active");
+  });
+
+  // jab canvas band hoga
+  myCanvas.addEventListener('hidden.bs.offcanvas', (e) => {
+    e.preventDefault()
+   
+    dot.classList.remove("active");
+  });
+// =========== INFO CAVAS CODE END ==========================  
       });
     
 }
@@ -207,5 +223,7 @@ if(funfact){
   })
 }
 // ====================== funfact CODE END  ================================
+
+
 
 

@@ -118,7 +118,9 @@
           <!-- ======================== Offcanvas Button ======================== -->
           <form class="d-flex  col-lg-2  d-flex flex-row justify-content-end align-items-center" role="search">
         <!-- <input class="form-control" type="search" placeholder="Search" aria-label="Search"/> -->
-<button class="btn text_light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">||</button>
+<button class="btn btn-dark m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#myCanvas">
+  Open Canvas
+</button>
 
 
       </form>
@@ -236,13 +238,80 @@
 
 
     <!-- =========== INFO CANVAS CODE START ================== -->
-     <div class="offcanvas offcanvas-top info_canvas" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+<div class="offcanvas show offcanvas-end info_canvas" tabindex="-1" id="myCanvas">
+  <div class="dot-expand" id="dot">
+
+    <!-- ========== HEADER CODE START =========== -->
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  
+    <button type="button" class="btn-close text-white bg-white all_div_round" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>    
+    <!-- ========== HEADER CODE END =========== -->
+    <!-- ========== CONTENT OF INFO CODE START =========== -->
+     <div class="container h-100 all_div_round   d-flex flex-lg-row flex-column justify-content-center align-items-center">
+      <div class="col-lg-6 col-12  d-flex h-100 flex-row justify-content-center align-items-center">
+<div class="col-12 col-lg-12 ps-3 text_light">
+                             <h2 class=" display-6 fw-normal text_light">AI, Machine & Deep Learning, GRC, Web & App Development Company!</h2>
+                             <p class="">
+
+                                 Tailor your Vertax Solution theme settings to align precisely with your business
+                                 objectives.
+                             </p>
+                             <div class="">
+                                 <div class="sidebar-box col-12  p-3 mx-auto d-flex flex-row align-items-center">
+                                     <!-- ====================================================== -->
+                                     <div class="col-12  d-flex flex-row">
+                                         <i class="fa-solid fa-phone  p-3 shadow-sm fs-6 rounded-circle"></i>
+                                         <p class="text-muted mb-0 ps-3">
+                                             <span class=" ps-1 fw-bold">Phone</span> <br>
+                                             +923218287590
+                                         </p>
+                                     </div>
+                                 </div>
+                                 <!-- ====================================================== -->
+                                 <!-- ====================================================== -->
+                                 <div class="sidebar-box col-12  p-3 mx-auto d-flex flex-row align-items-center">
+
+                                     <div class="col-12  d-flex flex-row">
+                                         <i class="fa-solid fa-envelope  p-3 shadow-sm fs-6 rounded-circle"></i>
+                                         <p class="text-muted mb-0 ps-3">
+                                             <span class="  fw-bold">Email</span> <br>
+                                             info@vertaxsolutions.com
+                                         </p>
+                                     </div>
+                                 </div>
+                                 <!-- ====================================================== -->
+
+
+
+
+                                 <div class="sidebar-box  col-12 col-org  p-3 mx-auto  d-flex flex-row align-items-center">
+                                     <div class="col-6 col-org d-flex flex-row text-wrap">
+                                         <i class="fa-solid fa-location-dot p-3 shadow-sm fs-6 rounded-circle"></i>
+                                         <p class="text-muted mb-0 ps-4">
+                                             <span class="col-org  fw-bold ">Location</span><br>
+                                             Karachi Pakistan
+                                         </p>
+                                     </div>
+                                 </div>
+
+
+
+                             </div>
+                         </div>
+      </div>
+      <div class="col-lg-6 col-12 d-flex h-100 flex-row align-items-center justify-content-center h-100 ">
+<img src="assets/image/ai_face_image.png" class="img-fluid col-12 mx-auto" alt="">
+      </div>
+  
+     </div>
+    <!-- ========== CONTENT OF INFO CODE END =========== -->
+
   </div>
-  <div class="offcanvas-body">
-    ...
+    
+
+  <div class="offcanvas-body text-white d-flex flex-column justify-content-center align-items-center">
+   
   </div>
 </div>
      <!-- ============== INFO CANVAS CODE END ======================= -->
