@@ -145,7 +145,7 @@ setTimeout(() => {
   loader_div.style.display="none";
   document.body.classList.add("anim")
   document.body.style.overflow = "visible"; 
-},  0);
+},  4000);
  
     // ==== LOADER REMOVE CODE END ==========
 
