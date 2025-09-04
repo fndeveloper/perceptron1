@@ -300,6 +300,20 @@ object-fit: contain !important;
 
 /* ================== TAGLINE CODE END =================== */
 /* ============== NAVBAR CSS CODE START ================ */
+.navbar_offcanvas{
+    width: 70% !important;
+  transition: 0.7s ease-in-out !important;
+}
+.navbar_offcanvas .dropdown-menu{
+  overflow: hidden !important;
+  word-break: break-all !important;
+  white-space: nowrap !important;
+  background-color: var(--bg-white) !important;
+}
+.navbar_offcanvas li a{
+  font-size: 14px !important;
+color: var(--text_light) !important;
+}
 .navfix{
   position: fixed;
   top: -1%;
