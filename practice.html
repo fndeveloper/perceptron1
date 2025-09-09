@@ -3,72 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dot to Fullscreen Offcanvas</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Cursor Animation Practice</title>
   <style>
-    /* Red dot initially */
-    .dot-expand {
-      position: absolute;
-      top: 50%;
-      right: 20px;
-      width: 20px;
-      height: 20px;
-      background: red;
-      border-radius: 50%;
-      transform: translateY(-50%);
-      transition: all 0.8s ease-in-out;
-      z-index: 1056; /* above backdrop */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      overflow: hidden;
+      cursor: none; /* Hide default cursor */
     }
 
-    /* Full expand inside canvas */
-    .dot-expand.active {
+    h1 {
+      font-size: 2rem;
+    }
+
+    /* Cursor border circle */
+    .cursor {
+      position: fixed;
       top: 0;
-      right: 0;
-      width: 100vw;
-      height: 98vh;
-      border-radius: 0;
-      transform: none;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      border: 2px solid #00ffcc;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: transform 0.15s ease-out;
+      z-index: 9999;
+      margin: 20% 0% !important;
     }
 
-    /* Offcanvas body transparent to see effect */
-    .offcanvas {
-      background: transparent !important;
-      border: none !important;
-      box-shadow: none !important;
+    /* Inner small dot */
+    .cursor-dot {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      background: #00ffcc;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
     }
   </style>
 </head>
 <body>
+  <h1>Move your mouse to see the cursor animation!</h1>
 
-<!-- Button -->
-<button class="btn btn-dark m-3" data-bs-toggle="offcanvas" data-bs-target="#myCanvas">
-  Open Canvas
-</button>
+  <!-- Custom cursor elements -->
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
 
-<!-- Offcanvas -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="myCanvas">
-  <div class="dot-expand" id="dot"></div>
-  <div class="offcanvas-body text-white d-flex flex-column justify-content-center align-items-center">
-    <h2>Hello Inside Canvas</h2>
-    <p>This content shows after expand.</p>
-  </div>
-</div>
+  <script>
+    const cursor = document.querySelector(".cursor");
+    const cursorDot = document.querySelector(".cursor-dot");
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  const myCanvas = document.getElementById('myCanvas');
-  const dot = document.getElementById('dot');
+    document.addEventListener("mousemove", e => {
+      console.log(e);
+      
+      // move small dot instantly
+      cursorDot.style.top = e.clientY + "px";
+      cursorDot.style.left = e.clientX + "px";
 
-  // jab canvas open hoga
-  myCanvas.addEventListener('shown.bs.offcanvas', () => {
-    dot.classList.add("active");
-  });
-
-  // jab canvas band hoga
-  myCanvas.addEventListener('hidden.bs.offcanvas', () => {
-    dot.classList.remove("active");
-  });
-</script>
-
+      // move border circle with smooth effect
+      cursor.style.top = e.clientY + "px";
+      cursor.style.left = e.clientX + "px";
+    });
+  </script>
 </body>
 </html>

@@ -169,14 +169,19 @@ border: none ;
   /* background-color: green !important; */
 
 }
+.center-img{
+  height: 70vh !important;
 
+}
 .center-image {
-  position: absolute;
-  top: 50% !important;
-  left: 50%;
-  height:70% !important ;
-  transform: translate(-50%, -50%) !important;
-  border-radius: 50%;
+  animation: 3.4s ease-in-out infinite forwards up !important;
+}
+@keyframes up {
+  0%{transform: scale(0.9);}
+  50%{transform: scale(0.95); }
+
+  100%{transform: scale(0.9); }
+
 }
 @media (max-width:992px) {
   .center-image {
@@ -197,6 +202,19 @@ border: none ;
   /* background-color: green !important; */
 
 }
+
+}
+
+.div_banner_social_icon{
+  writing-mode: vertical-lr  !important;
+  /* text-orientation: sideways !important;    */
+  transform: rotate(180deg);     
+}
+.div_banner_social_icon a{
+  font-weight: 400;
+  font-size: 14px !important;
+  padding: 10px 0px !important;
+  color: var(--text_light) !important;
 }
 /* Spinning text CSS */
 .spinning {
@@ -227,7 +245,7 @@ border: none ;
 .tag_animtaion h2{
     opacity: 0 ;
     transition: 0.7s ease-in-out !important;
-    animation: 18s tagtext linear infinite;
+    animation: 34s tagtext linear infinite;
     color: var(--text_light);
 }
 .tag_animtaion1{
@@ -557,7 +575,7 @@ background-color: var(--bg_black);
 .image_home_banner{
   background-size: cover;
   width: 100% !important;
-  height: 50vh !important;
+  height: 70vh !important;
 }
 
 .nav_tabs_of_about .nav-item .nav-link
