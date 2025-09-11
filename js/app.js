@@ -223,3 +223,20 @@ if(funfact){
   })
 }
 // ====================== funfact CODE END  ================================
+
+
+
+// ============= IMAGE ANIMTION CODE START ===============
+    window.addEventListener("scroll", () => {
+      document.querySelectorAll(".image_of_card_serivce").forEach(img => {
+        const rect = img.getBoundingClientRect();
+
+        
+        if (rect.top < window.innerHeight-200 && rect.bottom > 0) {
+          img.classList.add("image_of_card_serivce_acive");
+        } else {
+          img.classList.remove("image_of_card_serivce_acive");
+        }
+      });
+    });
+// ============= IMAGE ANIMAYION CODE END ================
