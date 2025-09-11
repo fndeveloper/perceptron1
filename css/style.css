@@ -594,10 +594,11 @@ a {
 
 /* ============ LOADER CODE START ============ */
 .loader {
-  height: 100vh !important;
+  width: 60vw !important;
+  height: 60vh !important;
   /* background-color: var(--bg-light); */
   position: fixed;
-  top: 0%;
+  margin: 20% 20% !important;
   z-index: 1111111 !important;
   transition: 0.9s ease-in-out !important;
 }
