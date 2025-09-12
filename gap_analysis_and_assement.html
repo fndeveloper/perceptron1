@@ -1,411 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Perceptron Global </title>
-        <link rel="shortcut icon" href="assets/logo/logo_transparent.png"
-            type="image/x-icon">
-        <!-- BOOTSTRAP 5 CDN CSS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous">
-        <!-- EXTERNEL FILE CSS -->
-        <link rel="stylesheet" href="css/style.css">
-    <!-- FONT AWESOME (ICONS) CDN -->  
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <!-- FONT AWESOME (ICONS) CDN -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perceptron Global </title>
+    <link rel="shortcut icon" href="assets/logo/logo_transparent.png"
+      type="image/x-icon">
+    <!-- BOOTSTRAP 5 CDN CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+    <!-- EXTERNEL FILE CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FONT AWESOME (ICONS) CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- FONT AWESOME (ICONS) CDN -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
 
-        <!-- =========== LOADER CODE START ================ -->
-        <div id="loader"></div>
-        <!-- =========== LOADER CODE END ================ -->
+    <!-- =========== LOADER CODE START ================ -->
+    <div id="loader"></div>
+    <!-- =========== LOADER CODE END ================ -->
 
-        <!-- ============ HEADER CODE START ============== -->
-        <div id="header"></div>
-        <!-- ============ HEADER CODE END ============== -->
+    <!-- ============ HEADER CODE START ============== -->
+    <div id="header"></div>
+    <!-- ============ HEADER CODE END ============== -->
 
         <!-- ================= BANNER CODE START ============== -->
         <section
-       data-aos="fade"
-     data-aos-offset="200"
-     data-aos-delay="5000"
-     data-aos-duration="1000"
-     data-aos-easing="ease-in-out"
-     data-aos-mirror="true"
-     data-aos-once="false"
-      >
+            data-aos="fade"
+            data-aos-offset="200"
+            data-aos-delay="5000"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false">
             <div
-                class="container-fluid h_85v pb-4 bg_white w_97vw all_div_round  d-flex flex-column justify-content-center">
-                <!-- =========== ROW 1 CODE START ================= -->
-                <div
-                    class="d-flex flex-row-reverse justify-content-end align-items-center">
+                class="container-fluid  all_div_round  d-flex flex-column justify-content-center"
+                data-aos="fade-up"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="5000"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center">
+                <!-- ========= IMG CODE START =============== -->
+                <div class="container-fluid m-0 p-0 w-100 position-relative ">
+                    <img
+                        src="assets/service_card_images/gap_analysis_and_assessment_card_img.jpg"
+                        class="img-fluid all_div_round  w_97vw  h_75vh w-100 h-100 object-fit-cover m-0 p-0"
+                        alt>
                     <div
-                        class="col-lg-5 d-lg-flex d-none flex-row justify-content-center align-items-center ">
-                        <div class="circle-container col-12 ">
-                            <!-- Center Image -->
-                            <img src="assets/image/ai_face_image.png"
-                                alt="Center Image"
-                                class="center-image img-fluid col-9  " />
+                        class="banner_abs all_div_round d-flex flex-row justify-content-center align-items-center">
+                        <!-- =========== ROW 1 CODE START ================= -->
 
-                            <!-- Spinning Circular Text -->
-                            <svg viewBox="0 0 200 200">
-                                <g class="spinning">
-                                    <defs>
-                                        <path id="circlePath" d="
-          M 100, 100
-          m -75, 0
-          a 75,75 0 1,1 150,0
-          a 75,75 0 1,1 -150,0
-        " />
-                                    </defs>
-                                    <text dy="0">
-                                        <textpath xlink:href="#circlePath"
-                                            dy="0">
-                                            Exploring Minds Artificially...
-                                            Exploring Minds
-                                            Artificially...
-                                        </textpath>
-                                    </text>
-                                </g>
-                            </svg>
+                        <div
+                            class=" d-flex py-4 flex-lg-row flex-column justify-content-center align-items-center">
+
+                            <div
+                                class="col-lg-6 d-flex flex-column align-items-center">
+                                <div class="font-family-Funnel">
+                               <h2 class="text-white mb-3 display-2 fw-bold text-center">Gap Analysis & Assement</h2>
+                                </div>
+                            </div>
+
                         </div>
+                        <!-- =========== ROW 1 CODE END ================= -->
+                    </div>
 
-                    </div>
-                    <div class="col-lg-7 pt-3 mt-3">
-                        <img
-                            src="assets/service_card_images/gap_analysis_and_assessment_card_img.jpg"
-                            class="img-fluid all_div_round image_home_banner"
-                            alt>
-                    </div>
                 </div>
-                <!-- =========== ROW 1 CODE END ================= -->
+                <!-- ========= BG IMG CODE END =============== -->
 
                 <!-- =========== ROW 2 CODE START ================= -->
-                <div class="row pt-2">
-                    <h2
-                        class="display-1 font-family-Funnel  col-12 text-end fs_7v py-5 text_light">
-                        <span
-                            class="text_light   font-family-Funnel text-center col-12 text-end ">
-                            AI, Machine & Deep Learning, GRC, Web & App
-                            Development Company!
-                        </h2>
 
-                        <div class="d-flex flex-row justify-content-between align-items-center">
-          <a href="contact.html" class="col-lg-2 col-6 text-decoration-none">
-              <button class="btn_d d-flex col-12 align-items-center  py-2">
-            <span
-              class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
-              <i class="fa-solid fa-plus"></i>
-            </span>
-            <span class="text_light ps-2 fw-medium fs-6">
-              BOOK A CALL
-            </span>
-          </button>
-             </a>
-
-               <div
-                class="col-lg-5 d-lg-none d-flex flex-row justify-content-center align-items-center ">
-               <img src="assets/image/ai_face_image.png" class="img-fluid col-7" alt="">
-              </div>
-</div>
-
-                    </div>
-                    <!-- =========== ROW 2 CODE START ================= -->
-
-                </div>
-            </section>
-            <!-- ================= BANNER CODE END ============== -->
-
-            <!-- ==================== TAGLINE CODE START =================== -->
-
-            <section
-       data-aos="fade"
-     data-aos-offset="200"
-     data-aos-delay="5000"
-     data-aos-duration="1000"
-     data-aos-easing="ease-in-out"
-     data-aos-mirror="true"
-     data-aos-once="false"
-      >
-                <div class="container mx-auto py-5 m-0 p-0">
-                    <div class="tag_animtaion">
-
-                        <h2 class="fs_8v font-family-Funnel pe-5">
-                                          Dedicated Team of Perceptron Global believes on creativity and trust               Combination of Experts, Consultants and Emerging Technology Delivers 21st Century Systems
-                        </h2>
-                        <h2 class="fs_8v font-family-Funnel ps-5">
-                                          Dedicated Team of Perceptron Global believes on creativity and trust               Combination of Experts, Consultants and Emerging Technology Delivers 21st Century Systems
-                        </h2>
-
-                    </div>
-                </div>
-
-            </section>
-            <!-- ==================== TAGLINE CODE END =================== -->
-
-            <!-- ===================== SERVICE SECTION CODE START ================ -->
-     <!-- ================ SECTION 1 START ======================= -->
-        <section class=" font-family-Funnel p-0">
-            <div
-                class="py-5  p-3  all_div_round col-12 mx-aut d-flex flex-lg-row flex-column justify-content-between  ">
-
-                <!-- ================ COL-LG-9 START =============== -->
-                <div
-                    class=" col-lg-9  text_dark text_justify all_div_round left_side_div border-radious d-flex flex-column ">
-              <!-- ==================== PRODUCT START ========================== -->
-                <div class="col-12  px-3 py-2 ">
-                    <h2 class="pb-2">Gap Analysis and' Assesment</h2>
-                        <p>Offering Risk Management Implementation Services with the specializes team of ISO and Risk
-                            Management. We offer to identify your IT and Enterprise Risk by using the International
-                            Standards like ISO 31000, ISO 27005 etc. that mitigate and make responsive your
-                            organization. Further, offering innovative tools and expertise to help businesses to
-                            navigate regulatory challenges and achieve operational excellence. </p>
-
-                </div>
-
-                <!-- =================== PRODUCT END =========================== -->
-                <!-- ==================== Benefits to Implement START ========================== -->
-                <div class="col-12  p-3">
-                    <h2 class="py-2">Benefits to Implement</h2>
-                        <p>
-                            Gap Analysis and Assesment streamline opted frameworks, compliance, predict risks, and
-                            automate workflows to enhance efficiency and accuracy in your businesses
-                        </p>
-                </div>
-                <!-- =================== Benefits to Implement END =========================== -->
-
-                <!-- ==================== Advantages to Organizations START ========================== -->
-                <div class="col-12  p-3 ">
-                    <h2 class="py-2">Advantages to Organizations</h2>
-                    <h5 class=" pb-2">Establishing &amp; Deploying the International Standards related to ISO Risk
-                        Management Frameworks, Enterprise Risk Management like ISO 27005, ISO 31000, COSO etc. &amp; that
-                        make strengthen your organization.</h5>
-                    <p>
-                        In recent years, organizations are operating through Information Technology and relative
-                        standards that helps to meet their target in time. As the organization are getting the benefits
-                        from the International Standards and systems, they need to identify their risk according place
-                        and system. Therefore, we are available to provide you the best solution that will save your
-                        organization for any uncertain incidents or disasters and prepare you fight against any mishap
-                        in the organization. Our Team will help you out to make your organization more strengthen and
-                        secure by implementing and using the International Standards of ISO.
-                        <br>
-                        <br>
-
-                        Frameworks helps to avoid and mitigate the organization from information security threats. We
-                        have a team of capable &amp; experience consultants, who would have the expertise of ISO 27005
-                        (Information Security Risk Management System), ISO 31000 (Risk Management System) etc. can
-                        implement in your organization. We have a long track record of successful implementation since
-                        1997. We are available at your servicem whatever you needed regarding aforementioned services.
-                </p></div>
-                <!-- =================== Advantages to Organizations END =========================== -->
-
-
-                <!-- ==================== Business Planning & Strategy START ========================== -->
-                <div class="col-12  p-3 ">
-                    <h2 class="py-2">Business Planning &amp; Strategy</h2>
-                    <!-- =================== Business Planning & Strategy END =========================== -->
-                    <p>
-                        Our approach to plan the standards according to the company polices and strategy for the
-                        implementation of International Standards. Our actionable roadmap for success with
-                        aforementioned standards that take your organiztion for excellance that increase the
-                        productivity and effectiveness. We also identifying key areas of improvement in your
-                        organization, and pinpointing opportunities for greater efficiency by identifying, implementing
-                        and tracking of Risks. Together, we define your long-term vision for implementing these
-                        standards and break it down into achievable milestones for ensuring every step aligns with your
-                        operational goals.
-                        <br>
-                        <br>
-
-                        Through tailored coaching, we guide you in deploying these standards that optimize leadership,
-                        operational efficiency, market positioning, and financial growth. Whether it’s implementing
-                        scalable solutions for best practices and integrating seamlessly with your operational, and
-                        Information Technology and other organizational Systems. We provide the insights and tools
-                        needed to enhance productivity.
-                        <br>
-                        <br>
-
-                        Our strategy sessions focus on setting realistic targets, navigating industry challenges, and
-                        optimizing your processes according the required standards. These standards will change your
-                        orgnaizational culture and make you more effective and efficient. Further, you can get the
-                        ultimate advantages of these standards by enabling controls according to the defined standards
-                        and achive your targets and goals in time.
-
-                    </p>
-                </div>
-           <!-- ==================== Frequently asked questions START ========================== -->
-<div class="col-12 p-3">
-  <h2 class="py-2">Frequently asked questions</h2>
-
-  <!-- =================== ACCORDIAN START ================-->
-  <div class="accordion mt-4" id="accordionRiskManagement">
-
-    <!-- Question 1 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingRiskOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseRiskOne" aria-expanded="true" aria-controls="collapseRiskOne">
-          What is Risk Management?
-          <i class="fa-solid fa-caret-down ms-auto"></i>
-        </button>
-      </h2>
-      <div id="collapseRiskOne" class="accordion-collapse collapse"
-        aria-labelledby="headingRiskOne" data-bs-parent="#accordionRiskManagement">
-        <div class="accordion-body">
-          Risk management is a systematic process of identifying, analyzing, and taking action
-          to mitigate potential threats or uncertainties that could negatively impact an
-          organization. It involves evaluating the likelihood and consequences of risks,
-          developing strategies to reduce harm, and continuously monitoring their
-          effectiveness. Ultimately, risk management helps protect an organization’s assets
-          and objectives.
-        </div>
-      </div>
-    </div>
-
-    <!-- Question 2 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingRiskTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseRiskTwo" aria-expanded="false" aria-controls="collapseRiskTwo">
-          How Risk Management Works?
-          <i class="fa-solid fa-caret-down ms-auto"></i>
-        </button>
-      </h2>
-      <div id="collapseRiskTwo" class="accordion-collapse collapse"
-        aria-labelledby="headingRiskTwo" data-bs-parent="#accordionRiskManagement">
-        <div class="accordion-body">
-          Risk management involves a series of steps: identifying potential risks, analyzing
-          their likelihood and impact, implementing strategies to mitigate or avoid them, and
-          monitoring the success of these actions. This proactive approach ensures that
-          organizations are better prepared to handle uncertainties and continue operations
-          with minimal disruption.
-        </div>
-      </div>
-    </div>
-
-    <!-- Question 3 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingRiskThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseRiskThree" aria-expanded="false" aria-controls="collapseRiskThree">
-          What are key benefits to implement Risk Management in our organization?
-          <i class="fa-solid fa-caret-down ms-auto"></i>
-        </button>
-      </h2>
-      <div id="collapseRiskThree" class="accordion-collapse collapse"
-        aria-labelledby="headingRiskThree" data-bs-parent="#accordionRiskManagement">
-        <div class="accordion-body">
-          Implementing risk management provides several key benefits, including:
-          <ul>
-            <li>Avoiding financial and operational losses</li>
-            <li>Improved decision-making and strategic planning</li>
-            <li>Encouragement of innovation within controlled boundaries</li>
-            <li>Protection of organizational reputation</li>
-            <li>Enhanced regulatory compliance</li>
-            <li>Improved business continuity and crisis preparedness</li>
-            <li>Greater employee engagement and productivity</li>
-          </ul>
-          These benefits contribute to long-term organizational stability and success.
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <!--==================== ACCORDIAN END ====================-->
-</div>
-<!-- =================== Frequently asked questions END =========================== -->
-
-                    <!-- ======================= STICKY QUERY FORM END ======================= -->
-
-                </div>
-                <!-- ================ COL-LG-9 END =============== -->
-                <!-- ================ COL-LG-3 START =============== -->
-                <div class="col-lg-3 mb-2 ">
-                    <div
-                        class="col-lg-11  col-12  p-2 sticky-element border-radious   ms-auto">
-               
-                     
-                        <!-- ========================  ======================== -->
-                 <div class="d-flex flex-column bg_white py-4 text_light px-2 all_div_round ">
-       <h5 class="px-2 py-1 "><i
-                                class="fa-solid fa-hand-point-right bg  p-2 rounded-circle me-2"></i>
-                           Explore the Next</h5>
-                        <div>
-                         <ul class="dropdown-menu1 list-unstyled child-dropdown"><a href="https://www.vertaxsolutions.com/grc_services_offered" class=" text-decoration-none text-dark">
-                            </a><li><a href="grc_services_offered.html" class=" text-decoration-none text-dark"></a><a class="dropdown-item text_light fs-6 " href="grc_services_offered">
-                                    Governance Framework <br> implementations</a></li>
-
-                            <li><a class="dropdown-item text_light fs-6 " href="iso_standards_implementations.html">
-                                    ISO Frameworks <br> Implementations</a></li>
-
-                            <li><a class="dropdown-item text_light fs-6 " href="risk_management_services.html">Risk Management
-                                    Services</a></li>
-
-
-                            <li><a class="dropdown-item text_light fs-6 " href="maturity_assesment.html">Maturity Assesment</a>
-                            </li>
-
-                            <li><a class="dropdown-item text_light fs-6 " href="gap_analysis_and_assement.html">Gap Analysis &amp;
-                                    Assement </a></li>
-
-                        </ul>
-                        </div>
-                       
-                 </div>
-                        <!-- ========================  ======================== -->
-                        <div class="col-12 fs-6 d-flex flex-column bg_white py-4 text_light px-3 all_div_round my-2">
-                           
-                            <h5 class=" pt-3">
-                                
-                                <i class="fa fa-question-circle bg  p-2 rounded-circle me-2" aria-hidden="true"></i>Need support?</h5>
-                            <p class=" fw-light ">If you need any helps, please
-                                feel free to contact us.</p>
-                            <span class=" mt-1 fs_6"><i
-                                    class="fa fa-phone pe-2 "></i>+44 7783 530138</span>
-                            <span class=" mt-1 fs_6"><i
-                                    class="fa-solid fa-envelope pe-2 "></i>info@Perceptron
-                                Gloabals.com</span>
-
-                        </div>
-                 
-                        <!-- =========================================================== -->
-                     
-                        <!-- =============================================================== -->
-                    </div>
-                </div>
-                <!-- ================ COL-LG-3 END =============== -->
+                <!-- =========== ROW 2 CODE START ================= -->
 
             </div>
         </section>
-        <!--================== SECTION 1 END ===========================  -->
+        <!-- ================= BANNER CODE END ============== -->
 
-                <!-- ===================== SERVICE SECTION CODE END =========================== -->
+      <!-- ==================== TAGLINE CODE START =================== -->
 
-             
-                <!-- ================ Let’s Connect now CODE START ===================== -->
-                <div id="grc_service_partial"></div>
-            <!-- ============== FOOTER CODE START =================== -->
-            <div id="footer"></div>
-            <!-- ============== FOOTER CODE END =================== -->
+      <section
+        data-aos="fade"
+        data-aos-offset="200"
+        data-aos-delay="5000"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false">
+        <div class="container mx-auto py-5 m-0 p-0">
+          <div class="tag_animtaion">
 
-            <!-- BOOTSTRAP 5 CDN  JS -->
-            <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-                crossorigin="anonymous"></script>
-            <!-- EXTERNAL JS  -->
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/app.js"></script>
-  
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  
+            <h2 class="fs_8v font-family-Funnel pe-5">
+              Dedicated Team of Perceptron Global believes on creativity and
+              trust Combination of Experts, Consultants and Emerging Technology
+              Delivers 21st Century Systems
+            </h2>
+            <h2 class="fs_8v font-family-Funnel ps-5">
+              Dedicated Team of Perceptron Global believes on creativity and
+              trust Combination of Experts, Consultants and Emerging Technology
+              Delivers 21st Century Systems
+            </h2>
 
-        </body>
-    </html>
+          </div>
+        </div>
+
+      </section>
+      <!-- ==================== TAGLINE CODE END =================== -->
+
+      <!-- ===================== SERVICE SECTION CODE START ================ -->
+      <!-- ================ SECTION 1 START ======================= -->
+      <section class=" font-family-Funnel p-0">
+        <div
+          class="py-5  p-3  all_div_round col-12 mx-aut d-flex flex-lg-row flex-column justify-content-between  ">
+
+          <!-- ================ COL-LG-9 START =============== -->
+          <div
+            class=" col-lg-9  text_dark text_justify all_div_round left_side_div border-radious d-flex flex-column ">
+            <!-- ==================== PRODUCT START ========================== -->
+            <div class="col-12  px-3 py-2 ">
+              <h2 class="pb-2">Gap Analysis and' Assesment</h2>
+              <p>Offering Risk Management Implementation Services with the
+                specializes team of ISO and Risk
+                Management. We offer to identify your IT and Enterprise Risk by
+                using the International
+                Standards like ISO 31000, ISO 27005 etc. that mitigate and make
+                responsive your
+                organization. Further, offering innovative tools and expertise
+                to help businesses to
+                navigate regulatory challenges and achieve operational
+                excellence. </p>
+
+            </div>
+
+            <!-- =================== PRODUCT END =========================== -->
+            <!-- ==================== Benefits to Implement START ========================== -->
+            <div class="col-12  p-3">
+              <h2 class="py-2">Benefits to Implement</h2>
+              <p>
+                Gap Analysis and Assesment streamline opted frameworks,
+                compliance, predict risks, and
+                automate workflows to enhance efficiency and accuracy in your
+                businesses
+              </p>
+            </div>
+            <!-- =================== Benefits to Implement END =========================== -->
+
+            <!-- ==================== Advantages to Organizations START ========================== -->
+            <div class="col-12  p-3 ">
+              <h2 class="py-2">Advantages to Organizations</h2>
+              <h5 class=" pb-2">Establishing &amp; Deploying the International
+                Standards related to ISO Risk
+                Management Frameworks, Enterprise Risk Management like ISO
+                27005, ISO 31000, COSO etc. &amp; that
+                make strengthen your organization.</h5>
+              <p>
+                In recent years, organizations are operating through Information
+                Technology and relative
+                standards that helps to meet their target in time. As the
+                organization are getting the benefits
+                from the International Standards and systems, they need to
+                identify their risk according place
+                and system. Therefore, we are available to provide you the best
+                solution that will save your
+                organization for any uncertain incidents or disasters and
+                prepare you fight against any mishap
+                in the organization. Our Team will help you out to make your
+                organization more strengthen and
+                secure by implementing and using the International Standards of
+                ISO.
+                <br>
+                <br>
+
+                Frameworks helps to avoid and mitigate the organization from
+                information security threats. We
+                have a team of capable &amp; experience consultants, who would
+                have the expertise of ISO 27005
+                (Information Security Risk Management System), ISO 31000 (Risk
+                Management System) etc. can
+                implement in your organization. We have a long track record of
+                successful implementation since
+                1997. We are available at your servicem whatever you needed
+                regarding aforementioned services.
+              </p></div>
+            <!-- =================== Advantages to Organizations END =========================== -->
+
+            <!-- ==================== Business Planning & Strategy START ========================== -->
+            <div class="col-12  p-3 ">
+              <h2 class="py-2">Business Planning &amp; Strategy</h2>
+              <!-- =================== Business Planning & Strategy END =========================== -->
+              <p>
+                Our approach to plan the standards according to the company
+                polices and strategy for the
+                implementation of International Standards. Our actionable
+                roadmap for success with
+                aforementioned standards that take your organiztion for
+                excellance that increase the
+                productivity and effectiveness. We also identifying key areas of
+                improvement in your
+                organization, and pinpointing opportunities for greater
+                efficiency by identifying, implementing
+                and tracking of Risks. Together, we define your long-term vision
+                for implementing these
+                standards and break it down into achievable milestones for
+                ensuring every step aligns with your
+                operational goals.
+                <br>
+                <br>
+
+                Through tailored coaching, we guide you in deploying these
+                standards that optimize leadership,
+                operational efficiency, market positioning, and financial
+                growth. Whether it’s implementing
+                scalable solutions for best practices and integrating seamlessly
+                with your operational, and
+                Information Technology and other organizational Systems. We
+                provide the insights and tools
+                needed to enhance productivity.
+                <br>
+                <br>
+
+                Our strategy sessions focus on setting realistic targets,
+                navigating industry challenges, and
+                optimizing your processes according the required standards.
+                These standards will change your
+                orgnaizational culture and make you more effective and
+                efficient. Further, you can get the
+                ultimate advantages of these standards by enabling controls
+                according to the defined standards
+                and achive your targets and goals in time.
+
+              </p>
+            </div>
+            <!-- ==================== Frequently asked questions START ========================== -->
+            <div class="col-12 p-3">
+              <h2 class="py-2">Frequently asked questions</h2>
+
+              <!-- =================== ACCORDIAN START ================-->
+              <div class="accordion mt-4" id="accordionRiskManagement">
+
+                <!-- Question 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingRiskOne">
+                    <button class="accordion-button" type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseRiskOne" aria-expanded="true"
+                      aria-controls="collapseRiskOne">
+                      What is Risk Management?
+                      <i class="fa-solid fa-caret-down ms-auto"></i>
+                    </button>
+                  </h2>
+                  <div id="collapseRiskOne" class="accordion-collapse collapse"
+                    aria-labelledby="headingRiskOne"
+                    data-bs-parent="#accordionRiskManagement">
+                    <div class="accordion-body">
+                      Risk management is a systematic process of identifying,
+                      analyzing, and taking action
+                      to mitigate potential threats or uncertainties that could
+                      negatively impact an
+                      organization. It involves evaluating the likelihood and
+                      consequences of risks,
+                      developing strategies to reduce harm, and continuously
+                      monitoring their
+                      effectiveness. Ultimately, risk management helps protect
+                      an organization’s assets
+                      and objectives.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingRiskTwo">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseRiskTwo" aria-expanded="false"
+                      aria-controls="collapseRiskTwo">
+                      How Risk Management Works?
+                      <i class="fa-solid fa-caret-down ms-auto"></i>
+                    </button>
+                  </h2>
+                  <div id="collapseRiskTwo" class="accordion-collapse collapse"
+                    aria-labelledby="headingRiskTwo"
+                    data-bs-parent="#accordionRiskManagement">
+                    <div class="accordion-body">
+                      Risk management involves a series of steps: identifying
+                      potential risks, analyzing
+                      their likelihood and impact, implementing strategies to
+                      mitigate or avoid them, and
+                      monitoring the success of these actions. This proactive
+                      approach ensures that
+                      organizations are better prepared to handle uncertainties
+                      and continue operations
+                      with minimal disruption.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingRiskThree">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseRiskThree" aria-expanded="false"
+                      aria-controls="collapseRiskThree">
+                      What are key benefits to implement Risk Management in our
+                      organization?
+                      <i class="fa-solid fa-caret-down ms-auto"></i>
+                    </button>
+                  </h2>
+                  <div id="collapseRiskThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingRiskThree"
+                    data-bs-parent="#accordionRiskManagement">
+                    <div class="accordion-body">
+                      Implementing risk management provides several key
+                      benefits, including:
+                      <ul>
+                        <li>Avoiding financial and operational losses</li>
+                        <li>Improved decision-making and strategic planning</li>
+                        <li>Encouragement of innovation within controlled
+                          boundaries</li>
+                        <li>Protection of organizational reputation</li>
+                        <li>Enhanced regulatory compliance</li>
+                        <li>Improved business continuity and crisis
+                          preparedness</li>
+                        <li>Greater employee engagement and productivity</li>
+                      </ul>
+                      These benefits contribute to long-term organizational
+                      stability and success.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!--==================== ACCORDIAN END ====================-->
+            </div>
+            <!-- =================== Frequently asked questions END =========================== -->
+
+            <!-- ======================= STICKY QUERY FORM END ======================= -->
+
+          </div>
+          <!-- ================ COL-LG-9 END =============== -->
+          <!-- ================ COL-LG-3 START =============== -->
+          <div class="col-lg-3 mb-2 ">
+            <div
+              class="col-lg-11  col-12  p-2 sticky-element border-radious   ms-auto">
+
+              <!-- ========================  ======================== -->
+              <div
+                class="d-flex flex-column bg_white py-4 text_light px-2 all_div_round ">
+                <h5 class="px-2 py-1 "><i
+                    class="fa-solid fa-hand-point-right p-2 rounded-circle me-2"></i>
+                  Explore the Next</h5>
+                <div>
+                  <ul class="dropdown-menu1 list-unstyled child-dropdown"><a
+                      href="https://www.vertaxsolutions.com/grc_services_offered"
+                      class=" text-decoration-none text-dark">
+                    </a><li><a href="grc_services_offered.html"
+                        class=" text-decoration-none text-dark"></a><a
+                        class="dropdown-item text_light fs-6 "
+                        href="grc_services_offered">
+                        Governance Framework <br> implementations</a></li>
+
+                    <li><a class="dropdown-item text_light fs-6 "
+                        href="iso_standards_implementations.html">
+                        ISO Frameworks <br> Implementations</a></li>
+
+                    <li><a class="dropdown-item text_light fs-6 "
+                        href="risk_management_services.html">Risk Management
+                        Services</a></li>
+
+                    <li><a class="dropdown-item text_light fs-6 "
+                        href="maturity_assesment.html">Maturity Assesment</a>
+                    </li>
+
+                    <li><a class="dropdown-item text_light fs-6 "
+                        href="gap_analysis_and_assement.html">Gap Analysis &amp;
+                        Assement </a></li>
+
+                  </ul>
+                </div>
+
+              </div>
+              <!-- ========================  ======================== -->
+              <div
+                class="col-12 fs-6 d-flex flex-column bg_white py-4 text_light px-3 all_div_round my-2">
+
+                <h5 class=" pt-3">
+
+                  <i class="fa fa-question-circle p-2 rounded-circle me-2"
+                    aria-hidden="true"></i>Need support?</h5>
+                <p class=" fw-light ">If you need any helps, please
+                  feel free to contact us.</p>
+                <span class=" mt-1 fs_6"><i
+                    class="fa fa-phone pe-2 "></i>+44 7783 530138</span>
+                <span class=" mt-1 fs_6"><i
+                    class="fa-solid fa-envelope pe-2 "></i>info@Perceptron
+                  Gloabals.com</span>
+
+              </div>
+
+              <!-- =========================================================== -->
+
+              <!-- =============================================================== -->
+            </div>
+          </div>
+          <!-- ================ COL-LG-3 END =============== -->
+
+        </div>
+      </section>
+      <!--================== SECTION 1 END ===========================  -->
+
+      <!-- ===================== SERVICE SECTION CODE END =========================== -->
+
+      <!-- ================ Let’s Connect now CODE START ===================== -->
+      <div id="grc_service_partial"></div>
+      <!-- ============== FOOTER CODE START =================== -->
+      <div id="footer"></div>
+      <!-- ============== FOOTER CODE END =================== -->
+
+      <!-- BOOTSTRAP 5 CDN  JS -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+      <!-- EXTERNAL JS  -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script src="js/app.js"></script>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    </body>
+  </html>
