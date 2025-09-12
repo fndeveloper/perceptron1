@@ -24,6 +24,7 @@
 body {
   background-color: var(--bg-light) !important;
   transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
+
 }
 
 .col-org {
@@ -743,14 +744,19 @@ a {
 .image_of_card_serivce_acive {
   width: 45% !important;
 }
-
+}
+.main_service_container {
+  text-align: justify !important;
+}
+ .service_cards p{
+  text-align: justify !important;
 }
 .banner_abs{
   position: absolute;
   top: 0%;
   height: 100%;
   width: 100%;
-  z-index: 1111 !important;
+  z-index: 11% !important;
   background-color: rgba(0, 0, 0, 0.39);
 }
 .sticky-element {
