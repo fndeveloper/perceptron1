@@ -155,6 +155,7 @@ body.offcanvas-open {
 .thembtn {
   padding: 5px 10px !important;
   font-size: 18px !important;
+  z-index: 1111 !important;
   transition: 0.7s ease-in-out !important;
   background-color: white !important;
   box-shadow: rgba(100, 100, 111, 0.507) 0px 7px 29px 0px !important;

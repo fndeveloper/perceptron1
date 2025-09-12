@@ -35,13 +35,17 @@ else{
 var theme=document.getElementById("theme");
 var localtheme=localStorage.getItem("theme");
 
+
 if(!localtheme){
   localStorage.setItem("theme","light")
   localtheme="light"
 }
 document.body.classList.add(localtheme)
 theme.addEventListener("click",(e)=>{
+  console.log(e);
+  
 e.preventDefault();
+
   if(localtheme === "light"){
     localtheme="dark";
         localStorage.setItem("theme", "dark");
@@ -63,6 +67,45 @@ theme.innerHTML =
 })
 
 // ============== THEME SET CODE END ========================
+
+
+
+// ============== THEME1 SET CODE START ======================
+var theme1=document.getElementById("theme1");
+var localtheme=localStorage.getItem("theme");
+
+
+if(!localtheme){
+  localStorage.setItem("theme","light")
+  localtheme="light"
+}
+document.body.classList.add(localtheme)
+theme1.addEventListener("click",(e)=>{
+  console.log(e);
+  
+e.preventDefault();
+
+  if(localtheme === "light"){
+    localtheme="dark";
+        localStorage.setItem("theme", "dark");
+
+  }
+else if(localtheme === "dark"){
+     localtheme="light";
+      localStorage.setItem("theme", "light");
+
+
+  }
+   document.body.classList.remove("light", "dark");
+  document.body.classList.add(localtheme);
+
+theme1.innerHTML = 
+  localtheme === "dark"
+    ? `<i class="fa-solid fa-sun"></i> `
+    : `<i class="fa-regular fa-moon"></i> `;
+})
+
+// ============== THEME 1 SET CODE END ========================
 // =========== INFO CANVAS CODE START ========================
    const myCanvas = document.getElementById('myCanvas');
   const dot = document.getElementById('dot');
@@ -98,6 +141,8 @@ if(footer){
 }
 // ===================== FOOTER CODE END ======================
 document.addEventListener("DOMContentLoaded", function () {
+  var service_section=document.getElementById("service_section");
+  if(service_section){
   // sab card wrappers ko select karo
   const aiCard = document.querySelector(".ai_product");
   const grcCard = document.querySelector(".grc_product");
@@ -121,6 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .addEventListener("mouseenter", () => showCard(grcCard));
   document.querySelector(".web_product_div h2")
     .addEventListener("mouseenter", () => showCard(webCard));
+}
 });
 
 
