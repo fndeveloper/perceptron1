@@ -730,7 +730,7 @@ a {
 }
 .image_of_card_serivce {
   position: absolute;
-  right: 0% !important;
+  right: 1% !important;
   height: 300px !important;
   width: 15%;
   top: 10% !important;

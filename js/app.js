@@ -41,7 +41,7 @@ if(!localtheme){
 }
 document.body.classList.add(localtheme)
 theme.addEventListener("click",(e)=>{
-
+e.preventDefault();
   if(localtheme === "light"){
     localtheme="dark";
         localStorage.setItem("theme", "dark");
@@ -145,7 +145,7 @@ setTimeout(() => {
   loader_div.style.display="none";
   document.body.classList.add("anim")
   document.body.style.overflow = "visible"; 
-}, 4000);
+}, 0);
  
     // ==== LOADER REMOVE CODE END ==========
 

@@ -1,197 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practice - Service Section Scroll Animation</title>
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-
+  <title>Theme Toggle with Scroll</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      background: #f7f7f7;
-      font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: sans-serif;
+      transition: background 0.3s, color 0.3s;
     }
-
-    .service_cards {
-      box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 20px 0px;
-      border-radius: 12px;
-      transition: all 0.5s ease-in-out;
-      position: relative;
+    body.light {
+      background: #f5f5f5;
+      color: #222;
     }
-
-    .image_of_card_serivce {
-      width: 30%;
-      right: 0% !important;
-      height: 200px;
-      position: absolute;
-      transition: width 1s ease-in-out;
+    body.dark {
+      background: #222;
+      color: #f5f5f5;
     }
-
-    .image_of_card_serivce.active {
-      width: 40% !important;
-    }
-
-    .btn_d {
-      background: #007bff;
+    #theme {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 10px 15px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background: #444;
       color: white;
-      border-radius: 30px;
-      text-transform: uppercase;
-      transition: all 0.3s ease-in-out;
     }
-
-    .btn_d:hover {
-      background: #0056b3;
-      color: #fff;
+    .content {
+      height: 3000px; /* scroll test */
+      padding: 20px;
     }
   </style>
 </head>
-
 <body>
-<div>
-  <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa et quia consequuntur mollitia quasi veniam eaque quos, veritatis sit facilis ab assumenda incidunt! Necessitatibus magnam nam ex praesentium obcaecati hic minus exercitationem illo incidunt quaerat ducimus dicta qui nihil facere beatae soluta, assumenda similique tempora deserunt id vitae animi architecto? Magnam repellendus accusantium praesentium totam, voluptatem quia labore soluta nisi. Expedita, vero natus ullam ipsam est voluptatum saepe corrupti debitis quis non asperiores reiciendis suscipit exercitationem sapiente harum delectus, odit atque ut at corporis ex architecto. Delectus pariatur praesentium a perferendis officiis hic recusandae fugiat repudiandae nemo. Sunt aperiam numquam hic, fugiat eaque, consequuntur quisquam aliquam ipsam aspernatur saepe tempora repellat debitis laborum eligendi necessitatibus quasi ullam ipsa velit fuga? Officia, minima. Labore cum voluptate quos, aliquam aperiam optio repellendus quod eum dolorem itaque modi. Dicta aliquid, asperiores eum in voluptatibus explicabo hic suscipit iure cupiditate iusto optio obcaecati impedit repudiandae laborum facere voluptate est aperiam! Quod error ea quas recusandae atque fuga fugiat maxime odio iusto numquam delectus dolorem dicta sit officiis eius quo, ratione repudiandae provident culpa esse eos illo inventore voluptate enim. In, voluptatum? Repellendus, rerum? Nesciunt amet officiis veritatis sapiente ullam! Similique quo animi unde officiis.</h2>
-</div>
-  <!-- ===================== SERVICE SECTION CODE START ================ -->
-  <section class="py-5">
-    <div class="container text-center mb-5">
-      <h5 class="text-uppercase fw-light">Our AI Products</h5>
-      <hr class="w-25 mx-auto">
-      <p class="text-muted col-lg-8 mx-auto">
-        We specialize in designing and developing secure, intelligent AI-powered products that can be customized to meet specific business requirements.
-        Our solutions are built to optimize operational efficiency, support smarter decision-making, and ensure regulatory compliance.
-      </p>
-    </div>
+  <button id="theme"><i id="themeIcon" class="fa-regular fa-moon"></i></button>
 
-    <!-- ======= SERVICE CARD 01 ======= -->
-    <div class="container d-flex flex-lg-row flex-column align-items-start bg-white p-4 my-4 service_cards">
-      <div class="col-lg-2 col-12 text-lg-start text-center">
-        <h3 class="fw-bold">01 .</h3>
-      </div>
-      <div class="col-lg-4 col-12 text-lg-start text-center pb-4">
-        <h2 class="fw-semibold mb-2 fs-3">buoyLIGHT <sup><span class="text-primary">TM</span></sup></h2>
-        <p>
-          Our AI-powered solution captures container & vehicle data with unmatched speed and accuracy,
-          fully integrated with Terminal Operating Systems (TOS). Deployed at Port Gates, Weighbridges,
-          and Quay Cranes, it boosts efficiency, saves millions, and runs 24/7 even in tough conditions.
-        </p>
-        <button class="btn_d d-flex align-items-center justify-content-center mx-auto px-3 py-2">
-          <i class="fa-solid fa-plus me-2"></i> MORE-INFO
-        </button>
-      </div>
-      <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
-        <img src="assets/banner_img/ai_product_solution_banner_img.png" class="img-fluid all_div_round mt-4 image_of_card_serivce" alt="Product Image">
-      </div>
-    </div>
-
-    <!-- ======= SERVICE CARD 02 ======= -->
-    <div class="container d-flex flex-lg-row flex-column align-items-start bg-white p-4 my-4 service_cards">
-      <div class="col-lg-2 col-12 text-lg-start text-center">
-        <h3 class="fw-bold">02 .</h3>
-      </div>
-      <div class="col-lg-4 col-12 text-lg-start text-center pb-4">
-        <h2 class="fw-semibold mb-2 fs-3">buoySPOT <sup><span class="text-primary">TM</span></sup></h2>
-        <p>
-          Our AI-powered solution detects and classifies container damages (dents, bends, rust, corrosion, etc.) with precision,
-          ensuring accurate assessments and reducing false claims. It boosts safety, minimizes delays, and helps terminal operators save millions.
-        </p>
-        <button class="btn_d d-flex align-items-center justify-content-center mx-auto px-3 py-2">
-          <i class="fa-solid fa-plus me-2"></i> MORE-INFO
-        </button>
-      </div>
-      <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
-        <img src="assets/banner_img/ai_product_solution_banner_img.png" class="img-fluid all_div_round mt-4 image_of_card_serivce" alt="Product Image">
-      </div>
-    </div>
-
-    <!-- ======= SERVICE CARD 03 ======= -->
-    <div class="container d-flex flex-lg-row flex-column align-items-start bg-white p-4 my-4 service_cards">
-      <div class="col-lg-2 col-12 text-lg-start text-center">
-        <h3 class="fw-bold">03 .</h3>
-      </div>
-      <div class="col-lg-4 col-12 text-lg-start text-center pb-4">
-        <h2 class="fw-semibold mb-2 fs-3">buoySPY <sup><span class="text-primary">TM</span></sup></h2>
-        <p>
-          Our AI-powered solution ensures 24/7 monitoring of terminals and premises in all conditions.
-          It auto-detects safety violations and alerts instantly to prevent safety breaches. Built with AI,
-          deep learning, and machine learning, it enhances operational safety.
-        </p>
-        <button class="btn_d d-flex align-items-center justify-content-center mx-auto px-3 py-2">
-          <i class="fa-solid fa-plus me-2"></i> MORE-INFO
-        </button>
-      </div>
-      <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
-        <img src="assets/banner_img/ai_product_solution_banner_img.png" class="img-fluid all_div_round mt-4 image_of_card_serivce" alt="Product Image">
-      </div>
-    </div>
-
-    <!-- ======= SERVICE CARD 04 ======= -->
-    <div class="container d-flex flex-lg-row flex-column align-items-start bg-white p-4 my-4 service_cards">
-      <div class="col-lg-2 col-12 text-lg-start text-center">
-        <h3 class="fw-bold">04 .</h3>
-      </div>
-      <div class="col-lg-4 col-12 text-lg-start text-center pb-4">
-        <h2 class="fw-semibold mb-2 fs-3">callMATICS <sup><span class="text-primary">TM</span></sup></h2>
-        <p>
-          callMatics is an AI-driven call center solution that enables human-like conversations without live agents.
-          It supports unlimited virtual agents, 24/7 operations, and over 100 languages. Automates up to 70% of tasks,
-          saving costs and boosting efficiency.
-        </p>
-        <button class="btn_d d-flex align-items-center justify-content-center mx-auto px-3 py-2">
-          <i class="fa-solid fa-plus me-2"></i> MORE-INFO
-        </button>
-      </div>
-      <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
-        <img src="assets/banner_img/ai_product_solution_banner_img.png" class="img-fluid all_div_round mt-4 image_of_card_serivce" alt="Product Image">
-      </div>
-    </div>
-
-    <!-- ======= SERVICE CARD 05 ======= -->
-    <div class="container d-flex flex-lg-row flex-column align-items-start bg-white p-4 my-4 service_cards">
-      <div class="col-lg-2 col-12 text-lg-start text-center">
-        <h3 class="fw-bold">05 .</h3>
-      </div>
-      <div class="col-lg-4 col-12 text-lg-start text-center pb-4">
-        <h2 class="fw-semibold mb-2 fs-3">planetSCAN <sup><span class="text-primary">TM</span></sup></h2>
-        <p>
-          PlanetScan combines satellite imagery with GIS to deliver detailed geographic, demographic, and social insights.
-          It helps businesses, planners, and developers identify high-potential areas and optimize strategies with AI-powered analytics.
-        </p>
-        <button class="btn_d d-flex align-items-center justify-content-center mx-auto px-3 py-2">
-          <i class="fa-solid fa-plus me-2"></i> MORE-INFO
-        </button>
-      </div>
-      <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
-        <img src="assets/banner_img/ai_product_solution_banner_img.png" class="img-fluid all_div_round mt-4 image_of_card_serivce" alt="Product Image">
-      </div>
-    </div>
-
-  </section>
-  <!-- ===================== SERVICE SECTION CODE END =========================== -->
-<div>
-  <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa et quia consequuntur mollitia quasi veniam eaque quos, veritatis sit facilis ab assumenda incidunt! Necessitatibus magnam nam ex praesentium obcaecati hic minus exercitationem illo incidunt quaerat ducimus dicta qui nihil facere beatae soluta, assumenda similique tempora deserunt id vitae animi architecto? Magnam repellendus accusantium praesentium totam, voluptatem quia labore soluta nisi. Expedita, vero natus ullam ipsam est voluptatum saepe corrupti debitis quis non asperiores reiciendis suscipit exercitationem sapiente harum delectus, odit atque ut at corporis ex architecto. Delectus pariatur praesentium a perferendis officiis hic recusandae fugiat repudiandae nemo. Sunt aperiam numquam hic, fugiat eaque, consequuntur quisquam aliquam ipsam aspernatur saepe tempora repellat debitis laborum eligendi necessitatibus quasi ullam ipsa velit fuga? Officia, minima. Labore cum voluptate quos, aliquam aperiam optio repellendus quod eum dolorem itaque modi. Dicta aliquid, asperiores eum in voluptatibus explicabo hic suscipit iure cupiditate iusto optio obcaecati impedit repudiandae laborum facere voluptate est aperiam! Quod error ea quas recusandae atque fuga fugiat maxime odio iusto numquam delectus dolorem dicta sit officiis eius quo, ratione repudiandae provident culpa esse eos illo inventore voluptate enim. In, voluptatum? Repellendus, rerum? Nesciunt amet officiis veritatis sapiente ullam! Similique quo animi unde officiis.</h2>
-</div>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <div class="content">
+    <h1>Scroll down then change theme!</h1>
+    <p>Keep scrolling... and test the theme toggle button.</p>
+  </div>
 
   <script>
-    // Scroll Observer with getBoundingClientRect
-    window.addEventListener("scroll", () => {
-      document.querySelectorAll(".image_of_card_serivce").forEach(img => {
-        const rect = img.getBoundingClientRect();
+    const theme = document.getElementById("theme");
+    const themeIcon = document.getElementById("themeIcon");
+    let localtheme = localStorage.getItem("theme");
 
-        
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-          img.classList.add("active");
-        } else {
-          img.classList.remove("active");
-        }
+    if (!localtheme) {
+      localStorage.setItem("theme", "light");
+      localtheme = "light";
+    }
+
+    document.body.classList.add(localtheme);
+
+    // set initial icon
+    themeIcon.className =
+      localtheme === "dark" ? "fa-solid fa-sun" : "fa-regular fa-moon";
+
+    theme.addEventListener("click", () => {
+      // ✅ Save current scroll
+      const scrollY = window.scrollY;
+
+      // toggle theme
+      if (localtheme === "light") {
+        localtheme = "dark";
+      } else {
+        localtheme = "light";
+      }
+      localStorage.setItem("theme", localtheme);
+
+      // update body class
+      document.body.classList.remove("light", "dark");
+      document.body.classList.add(localtheme);
+
+      // update icon
+      themeIcon.className =
+        localtheme === "dark" ? "fa-solid fa-sun" : "fa-regular fa-moon";
+
+      // ✅ Restore scroll (after repaint)
+      requestAnimationFrame(() => {
+        window.scrollTo(0, scrollY);
       });
     });
   </script>
-
 </body>
-
 </html>
