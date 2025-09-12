@@ -112,6 +112,10 @@ body.light {
 .h_85vh {
   height: 80vh !important;
 }
+.h_75vh{
+  object-fit: cover !important;
+  height: 70vh !important;
+}
 
 .w_97vw {
   width: 97vw !important;
@@ -773,7 +777,8 @@ a {
   height: 100%;
   width: 100%;
   z-index: 11% !important;
-  background-color: rgba(0, 0, 0, 0.39);
+  background-color: rgba(0, 0, 0, 0.63);
+  backdrop-filter: blur(0.9px) !important;
 }
 .sticky-element {
   transition: 0.7s ease-in-out !important;
