@@ -1,394 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Perceptron Global </title>
-        <link rel="shortcut icon" href="assets/logo/logo_transparent.png"
-            type="image/x-icon">
-        <!-- BOOTSTRAP 5 CDN CSS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous">
-        <!-- EXTERNEL FILE CSS -->
-        <link rel="stylesheet" href="css/style.css">
-    <!-- FONT AWESOME (ICONS) CDN -->  
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <!-- FONT AWESOME (ICONS) CDN -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perceptron Global </title>
+    <link rel="shortcut icon" href="assets/logo/logo_transparent.png"
+      type="image/x-icon">
+    <!-- BOOTSTRAP 5 CDN CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+    <!-- EXTERNEL FILE CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FONT AWESOME (ICONS) CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- FONT AWESOME (ICONS) CDN -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
 
-        <!-- =========== LOADER CODE START ================ -->
-        <div id="loader"></div>
-        <!-- =========== LOADER CODE END ================ -->
+    <!-- =========== LOADER CODE START ================ -->
+    <div id="loader"></div>
+    <!-- =========== LOADER CODE END ================ -->
 
-        <!-- ============ HEADER CODE START ============== -->
-        <div id="header"></div>
-        <!-- ============ HEADER CODE END ============== -->
+    <!-- ============ HEADER CODE START ============== -->
+    <div id="header"></div>
+    <!-- ============ HEADER CODE END ============== -->
 
-        <!-- ================= BANNER CODE START ============== -->
+      <!-- ================= BANNER CODE START ============== -->
         <section
-       data-aos="fade"
-     data-aos-offset="200"
-     data-aos-delay="5000"
-     data-aos-duration="1000"
-     data-aos-easing="ease-in-out"
-     data-aos-mirror="true"
-     data-aos-once="false"
-      >
+            data-aos="fade"
+            data-aos-offset="200"
+            data-aos-delay="5000"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false">
             <div
-                class="container-fluid h_85v pb-4 bg_white w_97vw all_div_round  d-flex flex-column justify-content-center">
-                <!-- =========== ROW 1 CODE START ================= -->
-                <div
-                    class="d-flex flex-row-reverse justify-content-end align-items-center">
+                class="container-fluid  all_div_round  d-flex flex-column justify-content-center"
+                data-aos="fade-up"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="5000"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center">
+                <!-- ========= IMG CODE START =============== -->
+                <div class="container-fluid m-0 p-0 w-100 position-relative ">
+                    <img
+                        src="assets/service_card_images/ecommerce_dev_card_img.jpg"
+                        class="img-fluid all_div_round  w_97vw  h_75vh w-100 h-100 object-fit-cover m-0 p-0"
+                        alt>
                     <div
-                        class="col-lg-5 d-lg-flex d-none flex-row justify-content-center align-items-center ">
-                        <div class="circle-container col-12 ">
-                            <!-- Center Image -->
-                            <img src="assets/image/ai_face_image.png"
-                                alt="Center Image"
-                                class="center-image img-fluid col-9  " />
+                        class="banner_abs all_div_round d-flex flex-row justify-content-center align-items-center">
+                        <!-- =========== ROW 1 CODE START ================= -->
 
-                            <!-- Spinning Circular Text -->
-                            <svg viewBox="0 0 200 200">
-                                <g class="spinning">
-                                    <defs>
-                                        <path id="circlePath" d="
-          M 100, 100
-          m -75, 0
-          a 75,75 0 1,1 150,0
-          a 75,75 0 1,1 -150,0
-        " />
-                                    </defs>
-                                    <text dy="0">
-                                        <textpath xlink:href="#circlePath"
-                                            dy="0">
-                                            Exploring Minds Artificially...
-                                            Exploring Minds
-                                            Artificially...
-                                        </textpath>
-                                    </text>
-                                </g>
-                            </svg>
+                        <div
+                            class=" d-flex py-4 flex-lg-row flex-column justify-content-center align-items-center">
+
+                            <div
+                                class="col-lg-7  d-flex flex-column align-items-center">
+                                <div class="font-family-Funnel">
+                               <h2 class="text-white mb-3 display-2 fw-bold text-center">AI E-Commerce Platforms Development </h2>
+                                </div>
+                            </div>
+
                         </div>
+                        <!-- =========== ROW 1 CODE END ================= -->
+                    </div>
 
-                    </div>
-                    <div class="col-lg-7 pt-3 mt-3">
-                        <img
-                            src="assets/service_card_images/ecommerce_dev_card_img.jpg"
-                            class="img-fluid all_div_round image_home_banner"
-                            alt>
-                    </div>
                 </div>
-                <!-- =========== ROW 1 CODE END ================= -->
+                <!-- ========= BG IMG CODE END =============== -->
 
                 <!-- =========== ROW 2 CODE START ================= -->
-                <div class="row pt-2">
-                    <h2
-                        class="display-1 font-family-Funnel  col-12 text-end fs_7v py-5 text_light">
-                        <span
-                            class="text_light   font-family-Funnel text-center col-12 text-end ">
-                            AI, Machine & Deep Learning, GRC, Web & App
-                            Development Company!
-                        </h2>
 
-                        <div class="d-flex flex-row justify-content-between align-items-center">
-          <a href="contact.html" class="col-lg-2 col-6 text-decoration-none">
-              <button class="btn_d d-flex col-12 align-items-center  py-2">
-            <span
-              class="bg-white text-dark rounded-circle fw-bold d-flex justify-content-center align-items-center p-2">
-              <i class="fa-solid fa-plus"></i>
-            </span>
-            <span class="text_light ps-2 fw-medium fs-6">
-              BOOK A CALL
-            </span>
-          </button>
-             </a>
-
-               <div
-                class="col-lg-5 d-lg-none d-flex flex-row justify-content-center align-items-center ">
-               <img src="assets/image/ai_face_image.png" class="img-fluid col-7" alt="">
-              </div>
-</div>
-
-                    </div>
-                    <!-- =========== ROW 2 CODE START ================= -->
-
-                </div>
-            </section>
-            <!-- ================= BANNER CODE END ============== -->
-
-            <!-- ==================== TAGLINE CODE START =================== -->
-
-            <section
-       data-aos="fade"
-     data-aos-offset="200"
-     data-aos-delay="5000"
-     data-aos-duration="1000"
-     data-aos-easing="ease-in-out"
-     data-aos-mirror="true"
-     data-aos-once="false"
-      >
-                <div class="container mx-auto py-5 m-0 p-0">
-                    <div class="tag_animtaion">
-
-                        <h2 class="fs_8v font-family-Funnel pe-5">
-                                          Dedicated Team of Perceptron Global believes on creativity and trust               Combination of Experts, Consultants and Emerging Technology Delivers 21st Century Systems
-                        </h2>
-                        <h2 class="fs_8v font-family-Funnel ps-5">
-                                          Dedicated Team of Perceptron Global believes on creativity and trust               Combination of Experts, Consultants and Emerging Technology Delivers 21st Century Systems
-                        </h2>
-
-                    </div>
-                </div>
-
-            </section>
-            <!-- ==================== TAGLINE CODE END =================== -->
-
-            <!-- ===================== SERVICE SECTION CODE START ================ -->
-     <!-- ================ SECTION 1 START ======================= -->
-        <section class=" font-family-Funnel p-0">
-            <div
-                class="py-5  p-3  all_div_round col-12 mx-aut d-flex flex-lg-row flex-column justify-content-between  ">
-
-                <!-- ================ COL-LG-9 START =============== -->
-                <div
-                    class=" col-lg-9  text_dark text_justify all_div_round left_side_div border-radious d-flex flex-column ">
-   
-              <!-- ==================== PRODUCT START ========================== -->
-                <div class="col-12  px-3 py-2 ">
-                    <h2 class="pb-2">AI E-Commerce Platforms Development</h2>
-                        <p>
-                            Integrating AI into Customer-Centric Solutions
-                            <br>
-                            <br>
-
-                            AI E-Commerce Platforms Development entails the design of a frontend and backend software
-                            system customized with appropriate artificial intelligence technologies to address specific
-                            issues, improve user interaction, and provide customer value. Business and individual users
-                            AI is reshaping the world by performing tasks, offering information, and making decisions.
-                            What follows is a comprehensive analysis of the methodology, benefits, and factors to
-                            consider while creating AI AI E-Commerce Applications for customers.
-                        </p>
-
-                </div>
-
-                <!-- =================== PRODUCT END =========================== -->
-                <!-- ==================== Our Solutions Steps START ========================== -->
-                <div class="col-12  p-3">
-                    <h2 class="py-2">Our Solutions Steps</h2>
-                        <p>
-                            We are glad to know your requirements first and indentify your pain points with defined
-                            objectives and your targeted customers. The AI enabled business E-Commerce application needs
-                            to not only to understand your business, it is important to know that what are the major
-                            things that your business is required to make AI enabled, that will provide the significant
-                            impact on your business. As there are numerous technologies of AI, after your business
-                            requirements, we can also proposed you the best technology of AI and what are the major
-                            tools that can handle your data and features. </p>
-                </div>
-                <!-- =================== Our Solutions Steps END =========================== -->
-
-                <!-- ==================== Advantages to your business START ========================== -->
-                <div class="col-12  p-3 ">
-                    <h2 class="py-2">Advantages to your business</h2>
-                    <p>
-                        The AI AI E-Commerce Platforms Business solution offers seamless integration with your existing
-                        system and provides that Benefits of AI Applications for Customers, with robust Automation,
-                        tailored marketing with AI, Insights and Predictions that Provide data-driven insights and
-                        forecasts to support decision-making. It will reduce cost of business, and enhanced your
-                        experience with customers.<br>
-                        <br>It is highly scalable and adaptable to growing demands, with both cloud and on-premise
-                        deployment options available. Designed for 24/7 reliability, it operates continuously under the
-                        toughest conditions, ensuring uninterrupted performance and boosting operational efficiency.
-                </p></div>
-                <!-- =================== Advantages to your business END =========================== -->
-
-
-                <!-- ==================== Business Planning & Strategy START ========================== -->
-                <div class="col-12  p-3 ">
-                    <h2 class="py-2">Business Planning &amp; Strategy</h2>
-                    <!-- =================== Business Planning & Strategy END =========================== -->
-                    <p>
-                        Our approach to planning and strategy for your business application automation centers on
-                        helping you implement a clear, actionable roadmap for success with AI-based solutions. We begin
-                        by assessing your requirements, identifying key areas for improvement, and pinpointing
-                        opportunities for greater efficiency. Together, we establish long-term vision for AI automation
-                        and break it down into achievable milestones, ensuring every step aligns with your operational
-                        goals.
-                        <br>
-                        <br>
-
-                        Through tailored coaching, we guide you in deploying AI-powered website solutions that optimize
-                        leadership, operational efficiency, market positioning, and financial growth. Whether it’s
-                        implementing scalable solutions for your any business unit and we provide the insights and tools
-                        needed to increase business productivity.
-                        <br>
-                        <br>
-
-                        Our strategy sessions focus on setting realistic targets, navigating industry challenges, and
-                        optimizing business resources. With a cloud-based solution that’s easy to deploy and manage
-                        (with on-premise options available), we empower your businesses to operate 24/7 under the
-                        toughest conditions. This innovative approach increases productivity and efficiency, saving
-                        millions while helping your business thrive in today’s competitive logistics landscape.
-                    </p>
-                </div>
-          
-             <!-- ==================== Frequently asked questions START ========================== -->
-<div class="col-12 p-3">
-  <h2 class="py-2">Frequently asked questions</h2>
-
-  <!-- =================== ACCORDIAN START ================-->
-  <div class="accordion mt-4" id="accordionAppDevelopment">
-
-    <!-- Question 1 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingAppOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseAppOne" aria-expanded="true" aria-controls="collapseAppOne">
-          What is Application Development?
-          <i class="fa-solid fa-caret-down ms-auto"></i>
-        </button>
-      </h2>
-      <div id="collapseAppOne" class="accordion-collapse collapse"
-        aria-labelledby="headingAppOne" data-bs-parent="#accordionAppDevelopment">
-        <div class="accordion-body">
-          Application development is the process of designing, creating, testing, and
-          deploying software applications—such as mobile apps, web apps, desktop programs, and
-          enterprise systems—to fulfill specific business or user needs. The primary objective
-          is to deliver scalable, user-friendly, and functional digital solutions that solve
-          problems, boost productivity, or offer user engagement.
-        </div>
-      </div>
-    </div>
-
-    <!-- Question 2 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingAppTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseAppTwo" aria-expanded="false" aria-controls="collapseAppTwo">
-          Why Choose Us for AI Application Development?
-          <i class="fa-solid fa-caret-down ms-auto"></i>
-        </button>
-      </h2>
-      <div id="collapseAppTwo" class="accordion-collapse collapse"
-        aria-labelledby="headingAppTwo" data-bs-parent="#accordionAppDevelopment">
-        <div class="accordion-body">
-          With over 35 years of combined experience in research and development, our team has
-          delivered numerous enterprise-level applications across corporate sectors. This deep
-          expertise enables us not only to fulfill your requirements but also to enhance your
-          application with practical, time-tested solutions that align with your business
-          goals.
-        </div>
-      </div>
-    </div>
-
-    <!-- Question 3 -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingAppThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseAppThree" aria-expanded="false" aria-controls="collapseAppThree">
-          What Is Our Development Strategy?
-          <i class="fa-solid fa-caret-down ms-auto"></i>
-        </button>
-      </h2>
-      <div id="collapseAppThree" class="accordion-collapse collapse"
-        aria-labelledby="headingAppThree" data-bs-parent="#accordionAppDevelopment">
-        <div class="accordion-body">
-          Our development strategy starts with a thorough analysis of your business needs.
-          Based on this, we create a detailed workflow for your review and approval. We then
-          execute the project in well-defined milestones, assigning a dedicated team to ensure
-          timely delivery of each deliverable with quality assurance.
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <!--==================== ACCORDIAN END ====================-->
-</div>
-<!-- =================== Frequently asked questions END =========================== -->
-           <!-- ======================= STICKY QUERY FORM END ======================= -->
-
-                </div>
-                <!-- ================ COL-LG-9 END =============== -->
-                <!-- ================ COL-LG-3 START =============== -->
-                <div class="col-lg-3 mb-2 ">
-                    <div
-                        class="col-lg-11  col-12  p-2 sticky-element border-radious   ms-auto">
-               
-                     
-                        <!-- ========================  ======================== -->
-                 <div class="d-flex flex-column bg_white py-4 text_light px-2 all_div_round ">
-       <h5 class="px-2 py-1 "><i
-                                class="fa-solid fa-hand-point-right bg  p-2 rounded-circle me-2"></i>
-                           Explore the Next</h5>
-                        <div>
-                       <ul class="dropdown-menu1 list-unstyled child-dropdown"><a href="https://www.vertaxsolutions.com/custom_web_development" class=" text-decoration-none text-dark">
-                            </a><li><a href="https://www.vertaxsolutions.com/custom_web_development" class=" text-decoration-none text-dark"></a><a class="dropdown-item" href="https://www.vertaxsolutions.com/custom_web_development">
-                                    Custom Web &amp; App <br> Development</a></li>
-                            <li><a class="dropdown-item" href="https://www.vertaxsolutions.com/e_commerce_development">
-                                    E-commerce Development</a></li>
-                            <li><a class="dropdown-item" href="https://www.vertaxsolutions.com/application_development">
-                                    Application Development</a></li>
-
-                            <br>
-
-                        </ul>
-                        </div>
-                       
-                 </div>
-                        <!-- ========================  ======================== -->
-                        <div class="col-12 fs-6 d-flex flex-column bg_white py-4 text_light px-3 all_div_round my-2">
-                           
-                            <h5 class=" pt-3">
-                                
-                                <i class="fa fa-question-circle bg  p-2 rounded-circle me-2" aria-hidden="true"></i>Need support?</h5>
-                            <p class=" fw-light ">If you need any helps, please
-                                feel free to contact us.</p>
-                            <span class=" mt-1 fs_6"><i
-                                    class="fa fa-phone pe-2 "></i>+44 7783 530138</span>
-                            <span class=" mt-1 fs_6"><i
-                                    class="fa-solid fa-envelope pe-2 "></i>info@Perceptron
-                                Gloabals.com</span>
-
-                        </div>
-                 
-                        <!-- =========================================================== -->
-                     
-                        <!-- =============================================================== -->
-                    </div>
-                </div>
-                <!-- ================ COL-LG-3 END =============== -->
+                <!-- =========== ROW 2 CODE START ================= -->
 
             </div>
         </section>
-        <!--================== SECTION 1 END ===========================  -->
+        <!-- ================= BANNER CODE END ============== -->
 
-                <!-- ===================== SERVICE SECTION CODE END =========================== -->
+      <!-- ==================== TAGLINE CODE START =================== -->
 
-             
-                <!-- ================ Let’s Connect now CODE START ===================== -->
-                <div id="ai_driver_web_service_partial"></div>
-            <!-- ============== FOOTER CODE START =================== -->
-            <div id="footer"></div>
-            <!-- ============== FOOTER CODE END =================== -->
+      <section
+        data-aos="fade"
+        data-aos-offset="200"
+        data-aos-delay="5000"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false">
+        <div class="container mx-auto py-5 m-0 p-0">
+          <div class="tag_animtaion">
 
-            <!-- BOOTSTRAP 5 CDN  JS -->
-            <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-                crossorigin="anonymous"></script>
-            <!-- EXTERNAL JS  -->
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/app.js"></script>
-  
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  
+            <h2 class="fs_8v font-family-Funnel pe-5">
+              Dedicated Team of Perceptron Global believes on creativity and
+              trust Combination of Experts, Consultants and Emerging Technology
+              Delivers 21st Century Systems
+            </h2>
+            <h2 class="fs_8v font-family-Funnel ps-5">
+              Dedicated Team of Perceptron Global believes on creativity and
+              trust Combination of Experts, Consultants and Emerging Technology
+              Delivers 21st Century Systems
+            </h2>
 
-        </body>
-    </html>
+          </div>
+        </div>
+
+      </section>
+      <!-- ==================== TAGLINE CODE END =================== -->
+
+      <!-- ===================== SERVICE SECTION CODE START ================ -->
+      <!-- ================ SECTION 1 START ======================= -->
+      <section class=" font-family-Funnel p-0">
+        <div
+          class="py-5  p-3  all_div_round col-12 mx-aut d-flex flex-lg-row flex-column justify-content-between  ">
+
+          <!-- ================ COL-LG-9 START =============== -->
+          <div
+            class=" col-lg-9  text_dark text_justify all_div_round left_side_div border-radious d-flex flex-column ">
+
+            <!-- ==================== PRODUCT START ========================== -->
+            <div class="col-12  px-3 py-2 ">
+              <h2 class="pb-2">AI E-Commerce Platforms Development</h2>
+              <p>
+                Integrating AI into Customer-Centric Solutions
+                <br>
+                <br>
+
+                AI E-Commerce Platforms Development entails the design of a
+                frontend and backend software
+                system customized with appropriate artificial intelligence
+                technologies to address specific
+                issues, improve user interaction, and provide customer value.
+                Business and individual users
+                AI is reshaping the world by performing tasks, offering
+                information, and making decisions.
+                What follows is a comprehensive analysis of the methodology,
+                benefits, and factors to
+                consider while creating AI AI E-Commerce Applications for
+                customers.
+              </p>
+
+            </div>
+
+            <!-- =================== PRODUCT END =========================== -->
+            <!-- ==================== Our Solutions Steps START ========================== -->
+            <div class="col-12  p-3">
+              <h2 class="py-2">Our Solutions Steps</h2>
+              <p>
+                We are glad to know your requirements first and indentify your
+                pain points with defined
+                objectives and your targeted customers. The AI enabled business
+                E-Commerce application needs
+                to not only to understand your business, it is important to know
+                that what are the major
+                things that your business is required to make AI enabled, that
+                will provide the significant
+                impact on your business. As there are numerous technologies of
+                AI, after your business
+                requirements, we can also proposed you the best technology of AI
+                and what are the major
+                tools that can handle your data and features. </p>
+            </div>
+            <!-- =================== Our Solutions Steps END =========================== -->
+
+            <!-- ==================== Advantages to your business START ========================== -->
+            <div class="col-12  p-3 ">
+              <h2 class="py-2">Advantages to your business</h2>
+              <p>
+                The AI AI E-Commerce Platforms Business solution offers seamless
+                integration with your existing
+                system and provides that Benefits of AI Applications for
+                Customers, with robust Automation,
+                tailored marketing with AI, Insights and Predictions that
+                Provide data-driven insights and
+                forecasts to support decision-making. It will reduce cost of
+                business, and enhanced your
+                experience with customers.<br>
+                <br>It is highly scalable and adaptable to growing demands, with
+                both cloud and on-premise
+                deployment options available. Designed for 24/7 reliability, it
+                operates continuously under the
+                toughest conditions, ensuring uninterrupted performance and
+                boosting operational efficiency.
+              </p></div>
+            <!-- =================== Advantages to your business END =========================== -->
+
+            <!-- ==================== Business Planning & Strategy START ========================== -->
+            <div class="col-12  p-3 ">
+              <h2 class="py-2">Business Planning &amp; Strategy</h2>
+              <!-- =================== Business Planning & Strategy END =========================== -->
+              <p>
+                Our approach to planning and strategy for your business
+                application automation centers on
+                helping you implement a clear, actionable roadmap for success
+                with AI-based solutions. We begin
+                by assessing your requirements, identifying key areas for
+                improvement, and pinpointing
+                opportunities for greater efficiency. Together, we establish
+                long-term vision for AI automation
+                and break it down into achievable milestones, ensuring every
+                step aligns with your operational
+                goals.
+                <br>
+                <br>
+
+                Through tailored coaching, we guide you in deploying AI-powered
+                website solutions that optimize
+                leadership, operational efficiency, market positioning, and
+                financial growth. Whether it’s
+                implementing scalable solutions for your any business unit and
+                we provide the insights and tools
+                needed to increase business productivity.
+                <br>
+                <br>
+
+                Our strategy sessions focus on setting realistic targets,
+                navigating industry challenges, and
+                optimizing business resources. With a cloud-based solution
+                that’s easy to deploy and manage
+                (with on-premise options available), we empower your businesses
+                to operate 24/7 under the
+                toughest conditions. This innovative approach increases
+                productivity and efficiency, saving
+                millions while helping your business thrive in today’s
+                competitive logistics landscape.
+              </p>
+            </div>
+
+            <!-- ==================== Frequently asked questions START ========================== -->
+            <div class="col-12 p-3">
+              <h2 class="py-2">Frequently asked questions</h2>
+
+              <!-- =================== ACCORDIAN START ================-->
+              <div class="accordion mt-4" id="accordionAppDevelopment">
+
+                <!-- Question 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingAppOne">
+                    <button class="accordion-button" type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseAppOne" aria-expanded="true"
+                      aria-controls="collapseAppOne">
+                      What is Application Development?
+                      <i class="fa-solid fa-caret-down ms-auto"></i>
+                    </button>
+                  </h2>
+                  <div id="collapseAppOne" class="accordion-collapse collapse"
+                    aria-labelledby="headingAppOne"
+                    data-bs-parent="#accordionAppDevelopment">
+                    <div class="accordion-body">
+                      Application development is the process of designing,
+                      creating, testing, and
+                      deploying software applications—such as mobile apps, web
+                      apps, desktop programs, and
+                      enterprise systems—to fulfill specific business or user
+                      needs. The primary objective
+                      is to deliver scalable, user-friendly, and functional
+                      digital solutions that solve
+                      problems, boost productivity, or offer user engagement.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingAppTwo">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseAppTwo" aria-expanded="false"
+                      aria-controls="collapseAppTwo">
+                      Why Choose Us for AI Application Development?
+                      <i class="fa-solid fa-caret-down ms-auto"></i>
+                    </button>
+                  </h2>
+                  <div id="collapseAppTwo" class="accordion-collapse collapse"
+                    aria-labelledby="headingAppTwo"
+                    data-bs-parent="#accordionAppDevelopment">
+                    <div class="accordion-body">
+                      With over 35 years of combined experience in research and
+                      development, our team has
+                      delivered numerous enterprise-level applications across
+                      corporate sectors. This deep
+                      expertise enables us not only to fulfill your requirements
+                      but also to enhance your
+                      application with practical, time-tested solutions that
+                      align with your business
+                      goals.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingAppThree">
+                    <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseAppThree" aria-expanded="false"
+                      aria-controls="collapseAppThree">
+                      What Is Our Development Strategy?
+                      <i class="fa-solid fa-caret-down ms-auto"></i>
+                    </button>
+                  </h2>
+                  <div id="collapseAppThree" class="accordion-collapse collapse"
+                    aria-labelledby="headingAppThree"
+                    data-bs-parent="#accordionAppDevelopment">
+                    <div class="accordion-body">
+                      Our development strategy starts with a thorough analysis
+                      of your business needs.
+                      Based on this, we create a detailed workflow for your
+                      review and approval. We then
+                      execute the project in well-defined milestones, assigning
+                      a dedicated team to ensure
+                      timely delivery of each deliverable with quality
+                      assurance.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!--==================== ACCORDIAN END ====================-->
+            </div>
+            <!-- =================== Frequently asked questions END =========================== -->
+            <!-- ======================= STICKY QUERY FORM END ======================= -->
+
+          </div>
+          <!-- ================ COL-LG-9 END =============== -->
+          <!-- ================ COL-LG-3 START =============== -->
+          <div class="col-lg-3 mb-2 ">
+            <div
+              class="col-lg-11  col-12  p-2 sticky-element border-radious   ms-auto">
+
+              <!-- ========================  ======================== -->
+              <div
+                class="d-flex flex-column bg_white py-4 text_light px-2 all_div_round ">
+                <h5 class="px-2 py-1 "><i
+                    class="fa-solid fa-hand-point-right p-2 rounded-circle me-2"></i>
+                  Explore the Next</h5>
+                <div>
+                  <ul class="dropdown-menu1 list-unstyled child-dropdown"><a
+                      href="https://www.vertaxsolutions.com/custom_web_development"
+                      class=" text-decoration-none text-dark">
+                    </a><li><a
+                        href="https://www.vertaxsolutions.com/custom_web_development"
+                        class=" text-decoration-none text-dark"></a><a
+                        class="dropdown-item"
+                        href="https://www.vertaxsolutions.com/custom_web_development">
+                        Custom Web &amp; App <br> Development</a></li>
+                    <li><a class="dropdown-item"
+                        href="https://www.vertaxsolutions.com/e_commerce_development">
+                        E-commerce Development</a></li>
+                    <li><a class="dropdown-item"
+                        href="https://www.vertaxsolutions.com/application_development">
+                        Application Development</a></li>
+
+                    <br>
+
+                  </ul>
+                </div>
+
+              </div>
+              <!-- ========================  ======================== -->
+              <div
+                class="col-12 fs-6 d-flex flex-column bg_white py-4 text_light px-3 all_div_round my-2">
+
+                <h5 class=" pt-3">
+
+                  <i class="fa fa-question-circle p-2 rounded-circle me-2"
+                    aria-hidden="true"></i>Need support?</h5>
+                <p class=" fw-light ">If you need any helps, please
+                  feel free to contact us.</p>
+                <span class=" mt-1 fs_6"><i
+                    class="fa fa-phone pe-2 "></i>+44 7783 530138</span>
+                <span class=" mt-1 fs_6"><i
+                    class="fa-solid fa-envelope pe-2 "></i>info@Perceptron
+                  Gloabals.com</span>
+
+              </div>
+
+              <!-- =========================================================== -->
+
+              <!-- =============================================================== -->
+            </div>
+          </div>
+          <!-- ================ COL-LG-3 END =============== -->
+
+        </div>
+      </section>
+      <!--================== SECTION 1 END ===========================  -->
+
+      <!-- ===================== SERVICE SECTION CODE END =========================== -->
+
+      <!-- ================ Let’s Connect now CODE START ===================== -->
+      <div id="ai_driver_web_service_partial"></div>
+      <!-- ============== FOOTER CODE START =================== -->
+      <div id="footer"></div>
+      <!-- ============== FOOTER CODE END =================== -->
+
+      <!-- BOOTSTRAP 5 CDN  JS -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+      <!-- EXTERNAL JS  -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script src="js/app.js"></script>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    </body>
+  </html>
