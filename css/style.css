@@ -22,8 +22,10 @@
 }
 
 body {
+
   background-color: var(--bg-light) !important;
   transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
+
 
 }
 
@@ -249,13 +251,20 @@ body.offcanvas-open {
   writing-mode: vertical-lr !important;
   /* text-orientation: sideways !important;    */
   transform: rotate(180deg);
+  transition: 0.6s ease-in-out !important;
+
 }
 
 .div_banner_social_icon a {
+  transition: 0.9s ease-in-out !important;
   font-weight: 400;
   font-size: 14px !important;
   padding: 10px 0px !important;
   color: var(--text_light) !important;
+}
+.div_banner_social_icon a:hover   {
+  color: var(--color-org) !important;
+background-color: var(--bg-dark) !important;
 }
 
 /* Spinning text CSS */
@@ -424,9 +433,15 @@ body.offcanvas-open {
 }
 
 .large_nav li a {
+  transition: 0.9s ease-in-out !important;
   color: var(--text-dark) !important;
 }
 
+.large_nav li a:hover{
+  border-radius: 10px !important;
+  color: white !important;
+  background-color: var(--color-org) !important;
+}
 /* .nav-item */
 .page_dropdown:hover .page_dropdown_menu {
   display: block !important;
