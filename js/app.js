@@ -248,15 +248,3 @@ window.addEventListener("scroll", () => {
 });
 // ============= IMAGE ANIMAYION CODE END ================
 
-
-// =============== CURSOR CODE START =================
-document.addEventListener("mousemove",(e)=>{
-var curose=document.getElementById("curose");
-
-document.body.style.cursor="none"
-curose.style.top=`${e.clientY}px`
-curose.style.left=`${e.clientX}px`
-
-
-})
-
