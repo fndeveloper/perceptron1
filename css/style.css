@@ -908,3 +908,7 @@ z-index: 1111 !important;
   position: fixed !important;
   /* transition:s ease-in-out !important; */
 }
+.contact_map{
+  height: 60vh !important;
+  width: 100%; 
+}
